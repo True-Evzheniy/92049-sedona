@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+  <base href="https://up-htmlacademy.github.io/92049-sedona/2/">
+</head>
+<body>
+	<header>
+		<nav class="mobile-menu">
+			<ul>
+				<li class="mobile-menu__item"><a href="#">Карта штата</a></li>
+				<li class="mobile-menu__item"><a href="#">Информация</a></li>
+				<li class="mobile-menu__item"><a href="#">Фото и видео</a></li>
+				<li class="mobile-menu__item"><a href="#">Гостиницы</a></li>
+			</ul>
+			<div class="close-btn"></div>
+		</nav>
+		<div class="top-menu">
+			<div class="logo"></div>
+			<div class="open-btn"></div>
+		</div>
+	</header>
+	<section class="intro">
+	</section>
+	<section class="intro-text">
+		<h2 class="intro-text__title">Оставьте свой отзыв</h2>
+		<p class="intro-text__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а также о псященных вами достопримечательностях</p>
+	</section>
+
+
+	<form class="hotel-form" method="post" action="#">
+		
+		<div class="name-form">
+			<h1 class="name-form__title">Представьтесь, пожалуйста:</h1>
+			<h2 class="name-form__name name-form__name--req">Фамилия</h2>
+			<input class="name-form__input" type="text" required value="Иванов">
+			<h2 class="name-form__name name-form__name--req">Имя:</h2>
+			<input class="name-form__input" type="text" required value="Пётр">
+			<h2 class="name-form__name">Отчество:</h2>
+			<input class="name-form__input" type="text" value="Александрович">
+		</div>
+		
+		<div class="impress-form">
+			<h1 class="impress-form__title">Ваше общее впечатление:</h2>
+			<input type="radio" id="positive" name="impress" hidden>
+			<input type="radio" id="negative" name="impress" hidden>
+			<label class="inpress-form__label" for="#positive">Скорее положительное</label>
+			<br>
+			<label class="inpress-form__label" for="#negative">Скорее отрицательное</label>
+		</div>
+		
+		<div class="date-form">
+			<h1 class="date-form__title">Даты вашей поездки</h2>
+			<h2 class="date-form__text">Дата приезда:</h2>
+			<input class="date-form__first-date" type="text" value="4 июля 2015" required>
+			<h2 class="date-form__text">Длительность пребывания:</h2>
+			<div class="counter__panel">
+				<button class="counter__btn">-</button>
+				<div class="counter__display">
+					<div class="counter__left">14</div>
+					<div class="counter__right">дн.</div>
+				</div>
+				<button class="date-form__btn">+</button>
+			</div>
+			<h2 class="date-form__text">Дата отъезда:</h2>
+			<input class="date-form__last-date" type="text" value="28 июля 2015" required>
+		</div>
+		
+		<div class="trevelers">
+			<div class="counter__panel">
+				<button class="counter__btn">-</button>
+				<div class="counter__display">
+					<div class="counter__left">2</div>
+					<div class="counter__right">чел.</div>
+				</div>
+				<button class="date-form__btn">+</button>
+			</div>
+			<div class="treveler">
+				<div class="treveler__col-left">
+					<span class="treveler-num-title">№</span>
+					<div class="treveler-num">1</div>
+				</div>
+				<div class="treveler__col-right">
+					<span class="treveler__name traveler__name--req">Фамилия:</span>
+					<input type="text" class="traveler__inputname" required value="Иванов">
+					<span class="treveler__name traveler__name--req">Имя:</span>
+					<input type="text" class="traveler__inputname" required value="Пётр">
+					<span class="treveler__name">Отчество:</span>
+					<input type="text" class="traveler__inputname" value="Александрович">
+				</div>
+			</div>
+			<div class="treveler">
+				<div class="treveler__col-left">
+					<span class="treveler-num-title">№</span>
+					<div class="treveler-num">2</div>
+				</div>
+				<div class="treveler__col-right">
+					<span class="treveler__name traveler__name--req">Фамилия:</span>
+					<input type="text" class="traveler__inputname" required value="Иванов">
+					<span class="treveler__name traveler__name--req">Имя:</span>
+					<input type="text" class="traveler__inputname" required value="Пётр">
+					<span class="treveler__name">Отчество:</span>
+					<input type="text" class="traveler__inputname" value="Александрович">
+				</div>
+			</div>	
+		</div>
+
+		<div class="showplace">
+			<h1 class="showplace__title">Посещенные достопримечательности:</h1>
+			<input id="devil" type="checkbox" name="showplace" checked hidden>
+			<input id="slidepark" type="checkbox" name="showplace" hidden>
+			<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
+			<input id="redrock" type="checkbox" name="showplace" checked hidden>
+			<label for="devil" class="showplace__label">Мост дьявола</label>
+			<label for="slidepark" class="showplace__label">Слайд-парк</label>
+			<label for="mountainbell" class="showplace__label">Гора-колокол</label>
+			<label for="redrock" class="showplace__label">Красные скалы</label>
+		</div>
+
+		<div class="download">
+			<h1 class="download__title">Загрузите фотографии</h1>
+			<input type="file" class="download__btn" id="download" hidden>
+			<label for="download" class="download__btn">Выбрать фотографии</label>
+			<div class="download__gallery">
+				<img src="" alt="" class="download-preview">
+				<img src="" alt="" class="download-preview">
+				<img src="" alt="" class="download-preview">
+				<img src="" alt="" class="download-preview">
+				<img src="" alt="" class="download-preview">
+				<img src="" alt="" class="download-preview">
+				<img src="" alt="" class="download-preview">
+			</div>	
+		</div>
+		
+		<input type="submit" class="hotel-form__btn" value="Отправить отзыв">
+
+	</form>
+
+	<footer class="main-footer">
+		<div class="main-footer__hash">#visitsedona</div>
+		<ul class="main-footer__social">
+			<li><a href="#" class="btn-twitter">Мы в твиттере</a></li>
+			<li><a href="#" class="btn-facebook">Мы в фейсбуке</a></li>
+			<li><a href="#" class="btn-youtube">Мы на ютюбе</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
