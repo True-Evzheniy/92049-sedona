@@ -7,82 +7,101 @@
   </head>
   <body>
 
-	<header>
-		<nav class="mobile-menu">
-			<ul>
-				<li class="mobile-menu__item"><a href="#">Карта штата</a></li>
-				<li class="mobile-menu__item"><a href="#">Информация</a></li>
-				<li class="mobile-menu__item"><a href="#">Фото и видео</a></li>
-				<li class="mobile-menu__item"><a href="#">Гостиницы</a></li>
-			</ul>
-			<div class="close-btn"></div>
-		</nav>
-		<div class="top-menu">
-			<div class="logo"></div>
-			<div class="open-btn"></div>
+	<header сlass="page-header">
+		<div class="page-header__menu-wrap">
+			<nav class="main-menu">
+				<ul class="main-menu__list">
+					<li class="main-menu__item"><a class="main-menu__link" href="">Карта штата</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="">Информация</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="">Фото и видео</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="">Гостиницы</a></li>
+				</ul>
+				<a href="" class="main-menu__close"></a>
+			</nav>
+			<div class="page-header__top-panel">
+				<img src="/img/logo.png" alt="" class="page-header__logo">
+				<a href="" class="page-header__burger"></a>
+			</div>
 		</div>
 	</header>
-	<section class="intro-index">
-		<img src="img/intro-welcome.png" alt="Welcome" class="intro__welcome">
-		<img src="img/intro-sedona.png" alt="Sedona" class="intro__sedona">
-		<img src="img/intro-text.png" alt="Because the Grand Canyon sucks!" class="intro__text">
+
+	<section class="main-intro">
+		<img src="/img/welcome.png" alt="Welcome" class="main-intro__welcome">
+		<img src="/img/sedona/png" alt="Sedona" class="main-intro__sedona">
+		<img src="/img/text.png" alt="Because the Grand Canyon sucks!" class="main-intro__text">
 	</section>
+	
 	<section class="intro-text">
 		<h2 class="intro-text__title">Седона - небольшой горрод в Аризоне, заслуживающий большего!</h2>
 		<p class="intro-text__text">Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
 	</section>
+
 	<section class="reasons">
-		<div class="reasons__header-blue">
-			<h3>Настоящий городок</h3>
-			<p>- #1 -</p>
-			<p>Седона не атракцион для туристов, там течет своя жизнь</p>
+		
+		<div class="reasons__item-light">
+			<h3 class="reasons__title-light">Настоящий городок</h3>
+			<p class="reasons__num-light">- #1 -</p>
+			<p class="reason__about-light">Седона не атракцион для туристов, там течет своя жизнь</p>
 		</div>
+		
 		<img src="img/reasons-1.jpg" alt="мотель" class="reasons__image">
+		
 		<div class="features">
-			<h2>Жилье</h2>
-			<p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-			<h2>Сувениры</h2>
-			<p>Не только китайского, но и местного производства</p>
-			<h2>Еда</h2>
-			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесть!</p>
+			<h2 class="features__title">Жилье</h2>
+			<p class="features__about">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+			<h2 class="features__title">Сувениры</h2>
+			<p class="features__about">Не только китайского, но и местного производства</p>
+			<h2 class="features__title">Еда</h2>
+			<p class="features__about">Всегда заказывайте фирменный бургер, вы не разочаруетесть!</p>
 		</div>
-		<div class="reason__heder-blue">
-			<h3>Там есть мост дьявола</h3>
-			<p>- №2 -</p>
-			<p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+
+		<div class="reasons__item-light">
+			<h3 class="reasons__title-light">Там есть мост дьявола</h3>
+			<p  class="reasons__num-light">- №2 -</p>
+			<p  class="reason__about-light">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
 		</div>
+
 		<img src="img/reasons-2.jpg" alt="" class="reasons__image">
-		<div class="reasons__header">
-			<h2>Небольшая площадь</h2>
-			<p>- №3 -</p>
-			<p>Все достопримечательности находятся очень близко</p>
+
+		<div class="reasons__item">
+			<h2 class="features__title">Небольшая площадь</h2>
+			<p class="reasons__num">- №3 -</p>
+			<p class="reason__about">Все достопримечательности находятся очень близко</p>
 		</div>
-		<div class="reasons__header">
+		
+		<div class="reasons__item">
 			<h2>Красивая дорога</h2>
-			<p>- №4 -</p>
-			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+			<p class="reasons__num">- №4 -</p>
+			<p  class="reason__about">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 		</div>
-		<div class="reasons__header">
-			<h2>Мало туристов</h2>
-			<p>- №5 -</p>
-			<p>Большинство туристов едет в Гранд Каньон и толпится там</p>
+
+		<div class="reasons__item">
+			<h2 class="features__title">Мало туристов</h2>
+			<p class="reasons__num">- №5 -</p>
+			<p class="reason__about">Большинство туристов едет в Гранд Каньон и толпится там</p>
 		</div>
+
 	</section>
+	
 	<section class="hotel-search">
-		<h1>Заинтересовались?</h1>
-		<p>Укажите предполагаемые даты поездки и покажем вам лучшие предложения гостиниц в седоне</p>
-		<a href="#" class="btn-hotel">Найти гостиницу</a>
+		<h1 class="hotel-search__title">Заинтересовались?</h1>
+		<p class="hotel-search__text">Укажите предполагаемые даты поездки и покажем вам лучшие предложения гостиниц в седоне</p>
+		<a href="#" class="hotel-search__btn">Найти гостиницу</a>
 	</section>
+	
 	<section class="map"></section>
-	<footer class="main-footer">
-		<div class="main-footer__hash">#visitsedona</div>
-		<ul class="main-footer__social">
-			<li><a href="#" class="btn-twitter">Мы в твиттере</a></li>
-			<li><a href="#" class="btn-facebook">Мы в фейсбуке</a></li>
-			<li><a href="#" class="btn-youtube">Мы на ютюбе</a></li>
-		</ul>
-		<div class="main-footer__copyright">
-			<span>Разработано<a href="#" class="htmlacademy"></a></span>
+	
+	<footer class="page-footer">
+		<div class="page-footer__hash">#visitsedona</div>
+		<div class="page-footer__social-wrap">
+			<ul class="social">
+				<li class="social__item"><a href="#" class="social__tw">Мы в твиттере</a></li>
+				<li class="social__item"><a href="#" class="social__fb">Мы в фейсбуке</a></li>
+				<li class="social__item"><a href="#" class="social__youtube">Мы на ютюбе</a></li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright">
+			<span class="page-footer__text">Разработано<a href="#" class="page-footer__link"></a></span>
 		</div>
 	</footer>
 	<!-- <script src="js/script.js"></script> -->
