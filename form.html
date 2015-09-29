@@ -6,20 +6,20 @@
 </head>
 <body>
 	<header сlass="page-header">
-		<div class="page-header__menu-wrap">
-			<nav class="main-menu">
-				<ul class="main-menu__list">
-					<li class="main-menu__item"><a class="main-menu__link" href="">Карта штата</a></li>
-					<li class="main-menu__item"><a class="main-menu__link" href="">Информация</a></li>
-					<li class="main-menu__item"><a class="main-menu__link" href="">Фото и видео</a></li>
-					<li class="main-menu__item"><a class="main-menu__link" href="">Гостиницы</a></li>
+		<div class="page-header__navigation">
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Карта штата</a></li>
+					<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Информация</a></li>
+					<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Фото и видео</a></li>
+					<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Гостиницы</a></li>
 				</ul>
-				<a href="" class="main-menu__close"></a>
+				<a href="" class="navigation__close"></a>
+				<div class="navigation__top-panel">
+					<img src="/img/logo.png" alt="" class="navigation__img-logo">
+					<a href="" class="navigation__burger"></a>
+				</div>
 			</nav>
-			<div class="page-header__top-panel">
-				<img src="/img/logo.png" alt="" class="page-header__logo">
-				<a href="" class="page-header__burger"></a>
-			</div>
 		</div>
 	</header>
 
@@ -35,7 +35,7 @@
 	<form class="hotel-form" method="post" action="/echo">
 		
 		<div class="name-form">
-			<h1 class="name-form__title">Представьтесь, пожалуйста:</h1>
+			<h1 class="form-page__title">Представьтесь, пожалуйста:</h1>
 			<h2 class="name-form__name name-form__name--req">Фамилия</h2>
 			<input class="name-form__input" type="text" required value="Иванов">
 			<h2 class="name-form__name name-form__name--req">Имя:</h2>
@@ -45,16 +45,15 @@
 		</div>
 		
 		<div class="impress-form">
-			<h1 class="impress-form__title">Ваше общее впечатление:</h2>
+			<h1 class="form-page__title">Ваше общее впечатление:</h2>
 			<input type="radio" id="positive" name="impress" hidden>
-			<input type="radio" id="negative" name="impress" hidden>
 			<label class="inpress-form__label" for="#positive">Скорее положительное</label>
-			<br>
+			<input type="radio" id="negative" name="impress" hidden>
 			<label class="inpress-form__label" for="#negative">Скорее отрицательное</label>
 		</div>
 		
 		<div class="date-form">
-			<h1 class="date-form__title">Даты вашей поездки</h2>
+			<h1 class="form-page__title">Даты вашей поездки</h2>
 			<h2 class="date-form__text">Дата приезда:</h2>
 			<input class="date-form__first-date" type="text" value="4 июля 2015" required>
 			<h2 class="date-form__text">Длительность пребывания:</h2>
@@ -88,11 +87,11 @@
 					<div class="trevelers-num">1</div>
 				</div>
 				<div class="trevelers__col-right">
-					<span class="trevelers__name traveler__name--req">Фамилия:</span>
+					<label class="trevelers__name traveler__name--req">Фамилия:</label>
 					<input type="text" class="traveler__inputname" required value="Иванов">
-					<span class="trevelers__name traveler__name--req">Имя:</span>
+					<label class="trevelers__name traveler__name--req">Имя:</label>
 					<input type="text" class="traveler__inputname" required value="Пётр">
-					<span class="trevelers__name">Отчество:</span>
+					<label class="trevelers__name">Отчество:</label>
 					<input type="text" class="traveler__inputname" value="Александрович">
 				</div>
 			</div>
@@ -102,11 +101,11 @@
 					<div class="trevelers-num">2</div>
 				</div>
 				<div class="trevelers__col-right">
-					<span class="trevelers__name traveler__name--req">Фамилия:</span>
+					<label class="trevelers__name traveler__name--req">Фамилия:</label>
 					<input type="text" class="traveler__inputname" required value="Иванов">
-					<span class="trevelers__name traveler__name--req">Имя:</span>
+					<label class="trevelers__name traveler__name--req">Имя:</label>
 					<input type="text" class="traveler__inputname" required value="Пётр">
-					<span class="trevelers__name">Отчество:</span>
+					<label class="trevelers__name">Отчество:</label>
 					<input type="text" class="traveler__inputname" value="Александрович">
 				</div>
 			</div>	
@@ -115,12 +114,12 @@
 		<div class="showplace">
 			<h1 class="showplace__title">Посещенные достопримечательности:</h1>
 			<input id="devil" type="checkbox" name="showplace" checked hidden>
-			<input id="slidepark" type="checkbox" name="showplace" hidden>
-			<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
-			<input id="redrock" type="checkbox" name="showplace" checked hidden>
 			<label for="devil" class="showplace__label">Мост дьявола</label>
+			<input id="slidepark" type="checkbox" name="showplace" hidden>
 			<label for="slidepark" class="showplace__label">Слайд-парк</label>
+			<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
 			<label for="mountainbell" class="showplace__label">Гора-колокол</label>
+			<input id="redrock" type="checkbox" name="showplace" checked hidden>
 			<label for="redrock" class="showplace__label">Красные скалы</label>
 		</div>
 
@@ -145,8 +144,8 @@
 
 	<footer class="page-footer">
 		<div class="page-footer__hash">#visitsedona</div>
-		<div class="page-footer__social-wrap">
-			<ul class="social">
+		<div class="social">
+			<ul class="social_list">
 				<li class="social__item"><a href="#" class="social__tw">Мы в твиттере</a></li>
 				<li class="social__item"><a href="#" class="social__fb">Мы в фейсбуке</a></li>
 				<li class="social__item"><a href="#" class="social__youtube">Мы на ютюбе</a></li>
