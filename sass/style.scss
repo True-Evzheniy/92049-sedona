@@ -1,3 +1,4 @@
+@import 'normalize';
 @import 'variables';
 @import './blocks/nav';
 
@@ -29,4 +30,33 @@
 
 
 	}
+}
+
+.reasons{
+	&__header{
+		padding: 40px 7% 0 7%;
+
+	}
+
+}
+
+.block__title{
+	margin: 0;
+	padding-bottom:30px;
+	font-family: $font-base;
+	text-align: center;
+	font-size:18px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000;
+	text-transform: uppercase;
+}
+.block__text{
+	margin:0;
+	padding-bottom:28px;
+	font-family: $font-base;
+	text-align: center;
+	font-size:14px;
+	line-height: 26px;
+	text-transform: uppercase;
 }
