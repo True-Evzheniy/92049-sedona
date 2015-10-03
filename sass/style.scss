@@ -1,0 +1,32 @@
+@import 'variables';
+@import './blocks/nav';
+
+.main-intro{
+	position: relative;
+	height:390px;
+	background: url("../img/bg-sedona.jpg") no-repeat;
+	padding:47px 0 47px 0;
+	background-size: 100%;
+
+	&:before{
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 280px;
+		height: 295px;
+		background: url('../img/bg-sedona-text.png');
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		display: block;
+		height: 27px;
+		width: 100%;
+		background: url('../img/bg-sedona-mask.png') no-repeat;
+		background-size:100% 27px;
+
+
+	}
+}
