@@ -1,6 +1,9 @@
 @import 'normalize';
 @import 'variables';
 @import './blocks/nav';
+@import './simbols-sedona';
+
+.container{min-width: 320px; max-width: 480px; margin: 0 auto;}
 
 .main-intro{
 	position: relative;
@@ -35,9 +38,91 @@
 .reasons{
 	&__header{
 		padding: 40px 7% 0 7%;
+	}
+	
+	&__item{
+		position:relative;
+		text-align: center;
+		background-color: #eee;
+		
+		&:after{
+			content: '';
+			position:absolute;
+			display: block;
+			bottom: 0;
+			left: 50%;
+			transform:translateX(-50%);
+			width: 87.5%;
+			height: 1px;
+			background-color: #d6d6d6;
 
+		}
+		&:last-child:after{
+			display: none;
+		}
+		
+		&--mask:before{
+			content: '';
+			display: block;
+			height: 17px;
+			background-color: $blue;
+			background: url('../img/reasons__item--mask.png') no-repeat 50% 0%;
+			background-size :100% 17px;
+		}
+
+		&--light{
+			background-color: $blue;
+			&:after{
+				display: none;
+			}
+		}
 	}
 
+	&__title{
+		margin:0;
+		padding-top: 29px;
+		padding-bottom:14px;
+		font-family: $font-base;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #000;
+
+		&--light{
+			padding-top: 41px;
+			color: #fff;
+		}
+	}
+
+	&__num{
+		margin: 0;
+		padding-bottom: 26px;
+		font-family: $font-base;
+		font-size: 14px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #333;
+		&--light{
+			color: #fff;
+		}
+	}
+
+	&__about{
+		margin: 0px;
+		padding-left: 9%;
+		padding-right: 9%;
+		padding-bottom: 30px;
+		font-family: $font-base;
+		font-size: 14px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #333;
+		&--light{
+			padding-bottom: 41px;
+			color: #fff;
+		}
+	}
 }
 
 .block__title{
@@ -60,3 +145,150 @@
 	line-height: 26px;
 	text-transform: uppercase;
 }
+
+.features{
+	padding-top: 40px;
+	&__item{
+		padding-left: 21.8%;
+		padding-right: 12.5%;
+	}
+
+	&__title{
+		position: relative;
+		margin: 0;
+		padding-bottom: 19px;
+		font-family: $font-base;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #000;
+
+		&:before{
+			content: '';
+			position: absolute;
+			left: -50px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			transform: translateY(-25%);
+		}
+
+		&--img-house:before{
+			background: url(../img/house.png) no-repeat;
+		}
+
+		&--img-souvenirs:before{
+			background: url(../img/souvenirs.png) no-repeat;
+		}
+
+		&--img-food:before{
+			background: url(../img/food.png) no-repeat;
+		}
+	}
+
+	&__about{
+		margin: 0;
+		padding-bottom:40px;
+		font-family: $font-base;
+		font-size: 14px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #333;
+
+	}
+}
+
+.hotel-search{
+	padding-top: 29px;
+	
+	&__btn{
+		display: block;
+		margin: 11px auto 49px;
+		padding: 6%  0;
+		text-align:center;
+		width: 87.5%;
+		font-family: $font-base;
+		font-size: 21px;
+		line-height: 26px;
+		text-transform: uppercase;
+		text-decoration: none;
+		background-color: $blue;
+		color:#fff;
+
+
+	}
+}
+
+.map{
+	display: block;
+	width: 100%;
+	height:350px;
+	background: url('../img/map.jpg') no-repeat;
+	background-size: 100% auto;
+}
+
+.page-footer{
+	&__hash{
+		padding-bottom: 42px;
+		text-align: center;
+		font-family: $font-base;
+		font-size: 21px;
+		line-height: 26px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	&__copyright{
+		font-family: $font-base;
+		font-size: 14px;
+		line-height: 26px;
+		text-transform: uppercase;
+	}
+
+	&__link{
+		font-size: 0;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 25%;
+			width: 36px;
+			height: 36px;
+			background-image: url('../img/htmlacademy.svg');
+			color: #000;
+		}
+	}
+
+}
+
+.social{
+	&__list{
+		margin: 0 ;
+		padding: 0;
+		list-style: none;
+		font-size:0px;
+		text-align: center;
+	}
+	&__item{
+		display: inline-block;
+		margin-right: 6px;
+	}
+
+	& span{display: none;}
+
+	&__link{
+		display: block;
+		width: 46px;
+		height: 48px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 48px;
+		background-color: $blue;
+		color: #fff;
+
+	}
+
+}
+
