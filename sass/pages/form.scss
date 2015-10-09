@@ -1,0 +1,28 @@
+.intro{
+	position: relative;
+    height: 158px;
+    background: url("../img/bg-sedona.jpg") no-repeat 50% 40%;
+    padding: 49px 0 47px 0;
+    background-size: 100%;
+
+	&:before{
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 174px;
+		height: 30px;
+		background: url('../img/bg-sedona-title.png');
+	}
+	
+
+    &:after{
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		display: block;
+		height: 27px;
+		width: 100%;
+		background: url('../img/bg-sedona-mask.png') no-repeat;
+		background-size:100% 27px;
+	}
+}
