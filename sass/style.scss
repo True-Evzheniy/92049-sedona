@@ -1,7 +1,8 @@
 @import 'normalize';
 @import 'variables';
+@import 'mixin'; 
 @import './blocks/nav';
-@import './simbols-sedona';
+@import './simbols';
 @import './layout/footer';
 @import './layout/container';
 @import './pages/index';

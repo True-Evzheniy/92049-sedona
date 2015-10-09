@@ -26,3 +26,22 @@
 		background-size:100% 27px;
 	}
 }
+.intro-text{
+	padding-top: 76px;
+	text-align: center;
+	border-bottom: 1px solid $gray-lighter;
+	&__title{
+		margin: 0;
+		padding-bottom: 30px;
+		@include fonter(18px,26px);
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__text{
+		margin: 0;
+		padding-bottom: 19px;
+		@include fonter(14px,24px);
+		text-transform: uppercase;
+	}
+
+}
