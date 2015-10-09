@@ -42,6 +42,53 @@
 		padding-bottom: 19px;
 		@include fonter(14px,24px);
 		text-transform: uppercase;
+		color: $gray-base;
 	}
 
 }
+.hotel-form{
+
+	&__item{
+		padding: 20px 6.25% 24px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid $gray-lighter;
+	}
+
+	&__title{
+		margin: 0;
+		@include fonter(18px,26px);
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__label{
+		display: block;
+		margin: 0;
+		padding-top: 19px;
+		padding-bottom: 11px;
+		@include fonter(14px,26px);
+		text-transform: uppercase;
+		padding-left: 20px;
+		color: $gray-base;
+
+		&--req:after{
+			content: '*';
+			color: $red;
+		}
+	}
+
+	&__input{
+		width: 100%;
+		margin: 0;
+		padding: 6.25%;
+		@include fonter(18px,26px);
+		font-weight: bold;
+		background-color: $gray-lighten;
+		border: none;
+		@include prefixes(box-sizing, border-box);
+	}
+
+
+
+}
+

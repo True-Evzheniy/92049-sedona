@@ -40,29 +40,29 @@
 
 		<form class="hotel-form" method="post" action="/echo">
 			
-			<div class="name-form">
-				<h1 class="form-page__title">Представьтесь, пожалуйста:</h1>
-				<h2 class="name-form__name name-form__name--req">Фамилия</h2>
-				<input class="name-form__input" type="text" required placeholder="Иванов">
-				<h2 class="name-form__name name-form__name--req">Имя:</h2>
-				<input class="name-form__input" type="text" required placeholder="Пётр">
-				<h2 class="name-form__name">Отчество:</h2>
-				<input class="name-form__input" type="text" placeholder="Александрович">
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Представьтесь, пожалуйста:</h1>
+				<h2 class="hotel-form__label hotel-form__label--req">Фамилия:</h2>
+				<input class="hotel-form__input" type="text" required placeholder="Иванов">
+				<h2 class="hotel-form__label hotel-form__label--req">Имя:</h2>
+				<input class="hotel-form__input" type="text" required placeholder="Пётр">
+				<h2 class="hotel-form__label">Отчество:</h2>
+				<input class="hotel-form__input" type="text" placeholder="Александрович">
 			</div>
 			
-			<div class="impress-form">
-				<h1 class="form-page__title">Ваше общее впечатление:</h2>
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Ваше общее впечатление:</h2>
 				<input type="radio" id="positive" name="impress" hidden>
 				<label class="inpress-form__label" for="#positive">Скорее положительное</label>
 				<input type="radio" id="negative" name="impress" hidden>
 				<label class="inpress-form__label" for="#negative">Скорее отрицательное</label>
 			</div>
 			
-			<div class="date-form">
-				<h1 class="form-page__title">Даты вашей поездки</h2>
-				<h2 class="date-form__text">Дата приезда:</h2>
-				<input class="date-form__first-date" type="text" placeholder="4 июля 2015" required>
-				<h2 class="date-form__text">Длительность пребывания:</h2>
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Даты вашей поездки</h2>
+				<h2 class="hotel-form__label">Дата приезда:</h2>
+				<input class="hotel-form__input" type="text" placeholder="4 июля 2015" required>
+				<h2 class="hotel-form__label">Длительность пребывания:</h2>
 				<div class="counter__panel">
 					<button class="counter__btn">-</button>
 					<div class="counter__display">
@@ -71,11 +71,12 @@
 					</div>
 					<button class="date-form__btn">+</button>
 				</div>
-				<h2 class="date-form__text">Дата отъезда:</h2>
-				<input class="date-form__last-date" type="text" placeholder="28 июля 2015" required>
+				<h2 class="hotel-form__label">Дата отъезда:</h2>
+				<input class="hotel-form__input" type="text" placeholder="28 июля 2015" required>
 			</div>
 			
-			<div class="trevelers">
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Количество путешественников</h1>
 				<div class="trevelerss__counter-wrap">
 					<div class="counter__panel">
 						<button class="counter__btn">-</button>
@@ -93,12 +94,12 @@
 						<div class="trevelers-num">1</div>
 					</div>
 					<div class="trevelers__col-right">
-						<label class="trevelers__name traveler__name--req">Фамилия:</label>
-						<input type="text" class="traveler__inputname" required placeholder="Иванов">
-						<label class="trevelers__name traveler__name--req">Имя:</label>
-						<input type="text" class="traveler__inputname" required placeholder="Пётр">
-						<label class="trevelers__name">Отчество:</label>
-						<input type="text" class="traveler__inputname" placeholder="Александрович">
+						<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
+						<input type="text" class="hotel-form__input" required placeholder="Иванов">
+						<label class="hotel-form__label hotel-form__label--req">Имя:</label>
+						<input type="text" class="hotel-form__input" required placeholder="Пётр">
+						<label class="hotel-form__label">Отчество:</label>
+						<input type="text" class="hotel-form__input" placeholder="Александрович">
 					</div>
 				</div>
 				<div class="trevelers__person">
@@ -107,18 +108,18 @@
 						<div class="trevelers-num">2</div>
 					</div>
 					<div class="trevelers__col-right">
-						<label class="trevelers__name traveler__name--req">Фамилия:</label>
-						<input type="text" class="traveler__inputname" required placeholder="Иванов">
-						<label class="trevelers__name traveler__name--req">Имя:</label>
-						<input type="text" class="traveler__inputname" required placeholder="Пётр">
-						<label class="trevelers__name">Отчество:</label>
-						<input type="text" class="traveler__inputname" placeholder="Александрович">
+						<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
+						<input type="text" class="hotel-form__input" required placeholder="Иванов">
+						<label class="hotel-form__label hotel-form__label--req">Имя:</label>
+						<input type="text" class="hotel-form__input" required placeholder="Пётр">
+						<label class="hotel-form__label">Отчество:</label>
+						<input type="text" class="hotel-form__input" placeholder="Александрович">
 					</div>
 				</div>	
 			</div>
 
-			<div class="showplace">
-				<h1 class="showplace__title">Посещенные достопримечательности:</h1>
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Посещенные достопримечательности:</h1>
 				<input id="devil" type="checkbox" name="showplace" checked hidden>
 				<label for="devil" class="showplace__label">Мост дьявола</label>
 				<input id="slidepark" type="checkbox" name="showplace" hidden>
@@ -129,8 +130,8 @@
 				<label for="redrock" class="showplace__label">Красные скалы</label>
 			</div>
 
-			<div class="download">
-				<h1 class="download__title">Загрузите фотографии</h1>
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Загрузите фотографии</h1>
 				<input type="file" class="download__btn" id="download" hidden>
 				<label for="download" class="download__btn">Выбрать фотографии</label>
 				<div class="download__gallery">
