@@ -1,0 +1,61 @@
+.page-footer{
+	padding-bottom: 30px;
+	&__hash{
+		padding-bottom: 42px;
+		text-align: center;
+		font-family: $font-base;
+		font-size: 21px;
+		line-height: 26px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	&__copyright{
+		padding-top: 48px;
+		text-align: center;
+		font-family: $font-base;
+		font-size: 14px;
+		line-height: 26px;
+		text-transform: uppercase;
+	}
+
+	&__link{
+		display: inline-block;
+		vertical-align: middle;
+		width: 36px;
+		height: 36px;
+		background-image: url('../img/htmlacademy.svg');
+	}
+
+}
+
+.social{
+	&__list{
+		margin: 0 ;
+		padding: 0;
+		list-style: none;
+		font-size:0px;
+		text-align: center;
+	}
+	&__item{
+		display: inline-block;
+		margin-right: 6px;
+	}
+
+	& span{display: none;}
+
+	&__link{
+		display: block;
+		width: 46px;
+		height: 48px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 48px;
+		background-color: $blue-base;
+		color: #fff;
+
+	}
+
+}
+
