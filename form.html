@@ -42,49 +42,50 @@
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Представьтесь, пожалуйста:</h1>
-				<h2 class="hotel-form__label hotel-form__label--req">Фамилия:</h2>
+				<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
 				<input class="hotel-form__input" type="text" required placeholder="Иванов">
-				<h2 class="hotel-form__label hotel-form__label--req">Имя:</h2>
+				<label class="hotel-form__label hotel-form__label--req">Имя:</label>
 				<input class="hotel-form__input" type="text" required placeholder="Пётр">
-				<h2 class="hotel-form__label">Отчество:</h2>
+				<label class="hotel-form__label">Отчество:</label>
 				<input class="hotel-form__input" type="text" placeholder="Александрович">
 			</div>
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Ваше общее впечатление:</h2>
-				<input type="radio" id="positive" name="impress" hidden>
-				<label class="inpress-form__label" for="#positive">Скорее положительное</label>
+				<input type="radio" id="positive" name="impress"  checked hidden>
+				<label class="hotel-form__radio" for="positive">Скорее положительное</label>
 				<input type="radio" id="negative" name="impress" hidden>
-				<label class="inpress-form__label" for="#negative">Скорее отрицательное</label>
+				<label class="hotel-form__radio" for="negative">Скорее отрицательное</label>
 			</div>
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Даты вашей поездки</h2>
-				<h2 class="hotel-form__label">Дата приезда:</h2>
+				<label class="hotel-form__label">Дата приезда:</label>
 				<input class="hotel-form__input" type="text" placeholder="4 июля 2015" required>
-				<h2 class="hotel-form__label">Длительность пребывания:</h2>
-				<div class="counter__panel">
-					<button class="counter__btn">-</button>
-					<div class="counter__display">
-						<div class="counter__left">14</div>
-						<div class="counter__right">дн.</div>
-					</div>
-					<button class="date-form__btn">+</button>
+				<label class="hotel-form__label">Длительность пребывания:</label>
+				<div class="counter">
+					<button class="counter__btn icon-minus"></button>
+						<div class="counter__display">
+							<input type="text" class="counter__input" value="14">
+							<div class="counter__right">дн.</div>
+						</div>
+					<button class="counter__btn icon-plus"></button>
 				</div>
-				<h2 class="hotel-form__label">Дата отъезда:</h2>
+				<label class="hotel-form__label">Дата отъезда:</label>
 				<input class="hotel-form__input" type="text" placeholder="28 июля 2015" required>
 			</div>
 			
 			<div class="hotel-form__item">
-				<h1 class="hotel-form__title">Количество путешественников</h1>
+				<h1 class="hotel-form__title">Кол-во путешественников</h1>
+				<label for="" class="hotel-form__label hotel-form__label--req">Количество путешественников:</label>
 				<div class="trevelerss__counter-wrap">
-					<div class="counter__panel">
-						<button class="counter__btn">-</button>
+					<div class="counter">
+						<button class="counter__btn icon-minus"></button>
 						<div class="counter__display">
-							<div class="counter__left">2</div>
+							<input type="text" class="counter__input" value="2">
 							<div class="counter__right">чел.</div>
 						</div>
-						<button class="trevelerss__btn">+</button>
+						<button class="counter__btn icon-plus"></button>
 					</div>
 				</div>
 				
@@ -121,13 +122,13 @@
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Посещенные достопримечательности:</h1>
 				<input id="devil" type="checkbox" name="showplace" checked hidden>
-				<label for="devil" class="showplace__label">Мост дьявола</label>
+				<label for="devil" class="hotel-form__checkbox">Мост дьявола</label>
 				<input id="slidepark" type="checkbox" name="showplace" hidden>
-				<label for="slidepark" class="showplace__label">Слайд-парк</label>
+				<label for="slidepark" class="hotel-form__checkbox">Слайд-парк</label>
 				<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
-				<label for="mountainbell" class="showplace__label">Гора-колокол</label>
+				<label for="mountainbell" class="hotel-form__checkbox">Гора-колокол</label>
 				<input id="redrock" type="checkbox" name="showplace" checked hidden>
-				<label for="redrock" class="showplace__label">Красные скалы</label>
+				<label for="redrock" class="hotel-form__checkbox">Красные скалы</label>
 			</div>
 
 			<div class="hotel-form__item">
