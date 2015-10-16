@@ -78,7 +78,7 @@
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Кол-во путешественников</h1>
 				<label for="" class="hotel-form__label hotel-form__label--req">Количество путешественников:</label>
-				<div class="trevelerss__counter-wrap">
+				<div class="travelerss__counter-wrap">
 					<div class="counter">
 						<button class="counter__btn icon-minus"></button>
 						<div class="counter__display">
@@ -89,12 +89,12 @@
 					</div>
 				</div>
 				
-				<div class="trevelers__person">
-					<div class="trevelers__col-left">
-						<span class="trevelers-num-title">№</span>
-						<div class="trevelers-num">1</div>
+				<div class="travelers">
+					<div class="travelers__col-left">
+						<span class="hotel-form__label">№</span>
+						<div class="travelers__num">1</div>
 					</div>
-					<div class="trevelers__col-right">
+					<div class="travelers__col-right">
 						<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
 						<input type="text" class="hotel-form__input" required placeholder="Иванов">
 						<label class="hotel-form__label hotel-form__label--req">Имя:</label>
@@ -103,12 +103,13 @@
 						<input type="text" class="hotel-form__input" placeholder="Александрович">
 					</div>
 				</div>
-				<div class="trevelers__person">
-					<div class="trevelers__col-left">
-						<span class="trevelers-num-title">№</span>
-						<div class="trevelers-num">2</div>
+
+				<div class="travelers">
+					<div class="travelers__col-left">
+						<span class="hotel-form__label">№</span>
+						<div class="travelers__num">2</div>
 					</div>
-					<div class="trevelers__col-right">
+					<div class="travelers__col-right">
 						<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
 						<input type="text" class="hotel-form__input" required placeholder="Иванов">
 						<label class="hotel-form__label hotel-form__label--req">Имя:</label>
@@ -116,8 +117,8 @@
 						<label class="hotel-form__label">Отчество:</label>
 						<input type="text" class="hotel-form__input" placeholder="Александрович">
 					</div>
-				</div>	
-			</div>
+				</div>
+			</div>	
 
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Посещенные достопримечательности:</h1>
@@ -133,20 +134,67 @@
 
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Загрузите фотографии</h1>
-				<input type="file" class="download__btn" id="download" hidden>
-				<label for="download" class="download__btn">Выбрать фотографии</label>
-				<div class="download__gallery">
-					<img src="" alt="" class="download-preview">
-					<img src="" alt="" class="download-preview">
-					<img src="" alt="" class="download-preview">
-					<img src="" alt="" class="download-preview">
-					<img src="" alt="" class="download-preview">
-					<img src="" alt="" class="download-preview">
-					<img src="" alt="" class="download-preview">
+				<input type="file" id="download" hidden>
+				<label for="download" class="hotel-form__btn hotel-form__btn--gray-theme">Выбрать фотографии</label>
+				
+				<div class="gallery">
+					<ul class="gallery__list">
+						
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<a href="" class="gallery__del-img"></a>
+						</li>
+	
+					</ul>
+					
 				</div>	
+				<input type="submit" class="hotel-form__btn" placeholder="Отправить отзыв">
 			</div>
-			
-			<input type="submit" class="hotel-form__btn" placeholder="Отправить отзыв">
 
 		</form>
 

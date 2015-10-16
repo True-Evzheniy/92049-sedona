@@ -1,0 +1,26 @@
+.travelers{
+	&:after {
+    	content: '';
+    	display: table;
+    	clear: both;
+	}
+	&__col-left{
+		float: left;
+		width: 61px;
+		
+	}
+
+	&__col-right{
+		float: right;
+		width: 76%;
+		
+	}
+
+	&__num{
+		padding: 16px 0;
+		@include fonter(18px,26px);
+		font-weight: bold;
+		text-align: center;
+		background-color: $gray-lighten;
+	}
+}

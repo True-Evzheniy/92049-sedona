@@ -52,10 +52,16 @@
 		padding: 20px 6.25% 24px;
 		padding-bottom: 24px;
 		border-bottom: 1px solid $gray-lighter;
+
+		&:last-of-type{
+			border-bottom: none;
+			margin-bottom: 55px;
+		}
 	}
 
 	&__title{
 		margin: 0;
+		padding-bottom: 25px;
 		@include fonter(18px,26px);
 		font-weight: bold;
 		text-transform: uppercase;
@@ -80,7 +86,7 @@
 	&__input{
 		width: 100%;
 		margin: 0;
-		padding: 6.25%;
+		padding: 16px 20px;
 		@include fonter(18px,26px);
 		font-weight: bold;
 		background-color: $gray-lighten;
@@ -113,13 +119,16 @@
 
 		&__checkbox{
 		display: inline-block;
-		padding-bottom: 14px;
+		padding-bottom: 24px;
 		width: 100%;
 		vertical-align: middle;
 		@include fonter(18px,26px);
 		font-weight: bold;
 		color: #000;
 		
+		&:last-child{
+			padding-bottom: 0;
+		}
 
 		&:before{
 			content: '';
@@ -132,6 +141,30 @@
 			background-color: $gray-lighten;
 		}
 	}
+
+	&__btn{
+		display: block;
+		margin-bottom: 40px;
+		width: 100%;
+		padding: 6% 0;
+		@include fonter(21px,26px);
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		border: none;
+		text-decoration: none;
+		background-color: $blue-base;
+		color: #fff;
+		cursor: pointer;
+
+	}	
+	
+	&__btn--gray-theme{
+		background-color: $gray-lighten;
+		color: $gray-base;
+	}
+
+
 }
 
 
