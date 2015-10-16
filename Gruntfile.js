@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-browser-sync');
   require('load-grunt-tasks')(grunt);
 
   var config = {
@@ -25,10 +26,21 @@ module.exports = function(grunt) {
       }
     },
 
+    browserSync: {
+      bsFiles: {
+          src : './css/*.css'
+      },
+      options: {
+          server: {
+              baseDir: "./"
+          }
+      }
+    },
+
     watch: {
       style: {
         files: ['sass/**/*.scss'],
-        tasks: ['sass', 'postcss'],
+        tasks: ['sass', 'postcss', 'browserSync'],
         options: {
           spawn: false,
           livereload: true
