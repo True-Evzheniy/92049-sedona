@@ -2,7 +2,7 @@
 	position:relative;
 	&__item{
 		height: 54px;
-		background-color: $blue;
+		background-color: $blue-base;
 		border-top:1px solid #9ac2db;
 		border-bottom:1px solid #678fa8;
 		
@@ -12,7 +12,7 @@
 		}
 		
 		&:first-child{
-			border-top: 1px solid $blue;
+			border-top: 1px solid $blue-base;
 		}
 	}
 	
@@ -92,7 +92,7 @@
 		display: block;
 		width: 23px;
 		height: 4px;
-		background-color: $blue;
+		background-color: $blue-base;
 		content: '';
 	}
 

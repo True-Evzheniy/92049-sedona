@@ -60,13 +60,13 @@
 			content: '';
 			display: block;
 			height: 17px;
-			background-color: $blue;
+			background-color: $blue-base;
 			background: url('../img/reasons__item--mask.png') no-repeat 50% 0%;
 			background-size :100% 17px;
 		}
 
 		&--light{
-			background-color: $blue;
+			background-color: $blue-base;
 			&:after{
 				display: none;
 			}
@@ -208,7 +208,7 @@
 		line-height: 26px;
 		text-transform: uppercase;
 		text-decoration: none;
-		background-color: $blue;
+		background-color: $blue-base;
 		color:#fff;
 
 
@@ -222,6 +222,5 @@
 	height:350px;
 	background: url('../img/map.jpg') no-repeat;
 	background-size: 100% auto;
-
 }
 
