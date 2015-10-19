@@ -31,6 +31,7 @@ module.exports = function(grunt) {
           src : './css/*.css'
       },
       options: {
+          watchTask: true,
           server: {
               baseDir: "./"
           }
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
     watch: {
       style: {
         files: ['sass/**/*.scss'],
-        tasks: ['sass', 'postcss', 'browserSync'],
+        tasks: ['sass', 'postcss'],
         options: {
           spawn: false,
           livereload: true
@@ -50,6 +51,6 @@ module.exports = function(grunt) {
   };
 
   config = require('./.gosha')(grunt, config);
-
+  grunt.registerTask('default', ['browserSync', 'watch']);
   grunt.initConfig(config);
 };

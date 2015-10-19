@@ -1,15 +1,14 @@
 .counter{
 	text-align: center;
 	&__btn{
+		display: block;
 		float: left;
 		padding: 0;
 		width: 61px;
 		height: 58px;
 		border: none;
-		outline: none;
-		border-radius:0;
 		background-color: $gray-lighten;
-		@include fonter(20px, 26px);
+		@include fonter(20px, 58px);
 		font-weight: bold;
 		color: $gray-trans;
 
