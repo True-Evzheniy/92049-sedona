@@ -106,3 +106,46 @@
 	}
 	}
 }
+
+@media(min-width: 768px){
+	.navigation{
+		&__close,&__burger{
+			display: none;
+		}
+		&__item{
+			width: 20%;
+			background-color: #fff;
+			border-top:1px solid #fff;
+			border-bottom:1px solid #fff;
+			&:first-child{
+			border-top: 1px solid #fff;
+			}
+			&:last-child{
+				box-shadow: none;
+			}
+			&--left{
+				float: left;
+			}
+			&--right{
+				float: right;
+			}
+		}
+		&__link{
+			color: #000;
+			@include fonter(14px, 18px)
+		}
+
+		&__top-panel{
+			position: static;
+			height: 0;
+		}
+		&__list{
+			position:relative;
+		}
+		&__logo{
+			top: 0;
+		}
+
+	}
+
+}

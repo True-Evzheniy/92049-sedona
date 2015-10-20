@@ -2,10 +2,9 @@
 
 .main-intro{
 	position: relative;
-	height:390px;
-	background: url("../img/bg-sedona.jpg") no-repeat;
+	background: url("../img/photo-background@1x.jpg") no-repeat;
 	padding:47px 0 47px 0;
-	background-size: 100%;
+	background-size: cover;
 
 	&:before{
 		content: '';
@@ -32,6 +31,7 @@
 
 .reasons{
 	&__header{
+		margin: 0;
 		padding: 40px 7% 0 7%;
 	}
 	
@@ -70,6 +70,19 @@
 			&:after{
 				display: none;
 			}
+		}
+	}
+
+	&__image{
+		height: 256px;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: cover;
+		&--city{
+			background-image: url("../img/photo-city@1x.jpg")
+		}
+		&--bridge{
+			background-image: url("../img/photo-bridge@1x.jpg")
 		}
 	}
 
@@ -143,9 +156,11 @@
 
 .features{
 	padding-top: 40px;
+	padding-left: 21.8%;
+	padding-right: 12.5%;
 	&__item{
-		padding-left: 21.8%;
-		padding-right: 12.5%;
+
+		box-sizing: border-box;
 	}
 
 	&__title{
@@ -170,15 +185,19 @@
 		}
 
 		&--img-house:before{
-			background: url(../img/house.png) no-repeat;
+			background: url(../img/icon-house.svg) no-repeat;
+			background-size: 85%;
+
 		}
 
 		&--img-souvenirs:before{
-			background: url(../img/souvenirs.png) no-repeat;
+			background: url(../img/icon-gift.svg) no-repeat;
+			background-size: 85%;
 		}
 
 		&--img-food:before{
-			background: url(../img/food.png) no-repeat;
+			background: url(../img/icon-burger.svg) no-repeat;
+			background-size: 85%;
 		}
 	}
 
@@ -195,14 +214,14 @@
 }
 
 .hotel-search{
-	padding-top: 29px;
+	
+	padding:29px 6.5% 49px;
 	
 	&__btn{
 		display: block;
-		margin: 11px auto 49px;
-		padding: 6%  0;
+		padding: 16px  0;
 		text-align:center;
-		width: 87.5%;
+		width: 100%;
 		font-family: $font-base;
 		font-size: 21px;
 		line-height: 26px;
@@ -210,9 +229,30 @@
 		text-decoration: none;
 		background-color: $blue-base;
 		color:#fff;
-
-
 	}
+	&__title{
+		margin: 0;
+		padding-bottom:30px;
+		font-family: $font-base;
+		text-align: center;
+		font-size:21px;
+		font-weight: bold;
+		line-height: 26px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	&__text{
+	margin:0;
+	padding-bottom:40px;
+	font-family: $font-base;
+	text-align: center;
+	font-size:14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $gray-base;
+	}
+
+	
 }
 
 .map{
@@ -224,3 +264,104 @@
 	background-size: 100% auto;
 }
 
+@media(min-width: 768px){
+	.main-intro{
+		padding:76px 0 84px 0; 
+
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			display: block;
+			height: 37px;
+			width: 100%;
+			background: url('../img/bg-sedona-mask-tablet.png') no-repeat;
+			background-size:100% 37px;
+		}
+		&:before{
+			content: '';
+			display: block;
+			margin: 0 auto;
+			width: 458px;
+			height: 352px;
+			background: url('../img/bg-sedona-text-tablet.png') no-repeat;
+		}
+	}
+
+	.block__title{
+		font-size: 21px;
+	}
+
+	.reasons{
+		&__item{
+			float: left;
+			width: 33.33%;
+			height: 256px;
+			padding:0 50px 0;
+			box-sizing: border-box;
+			&--mask:before{
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+		&__about{
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&__image{
+			width: 66.67%;
+			float:right;
+		}
+
+
+
+		&__title{
+			font-size: 21px;
+		}
+	}
+
+	.features{
+		padding: 0;
+		&__title{
+			font-size: 21px;
+			&:before{
+				content: '';
+				position: absolute;
+				top: -30px;
+				left: 50%;
+				display: block;
+				width: 80px;
+				height: 80px;
+				transform: translate(-50%,-100%);
+				background-size: 85%;
+				background-position: center;
+			}
+		}
+		&__item{
+			padding: 160px 50px 20px;
+			text-align: center;
+			width: 33.33%;
+			float: left;
+
+		}
+	}
+	.hotel-search{
+		padding:58px 155px 58px;
+		&__title{
+			padding-bottom: 35px;
+			@include fonter(30px,30px);
+		}
+		&__text{
+			padding-bottom: 44px;
+		}
+	}
+
+	.map{
+		background-image: url("../img/map-tablet.jpg")
+	}
+
+
+}

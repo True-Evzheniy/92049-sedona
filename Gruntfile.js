@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('grunt-browser-sync');
   require('load-grunt-tasks')(grunt);
 
   var config = {

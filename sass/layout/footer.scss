@@ -22,10 +22,12 @@
 
 	&__link{
 		display: inline-block;
+		margin-left: 10px;
 		vertical-align: middle;
 		width: 36px;
 		height: 36px;
 		background-image: url('../img/htmlacademy.svg');
+		background-repeat: no-repeat;
 	}
 
 }
@@ -57,5 +59,25 @@
 
 	}
 
+}
+
+@media(min-width: 768px){
+	.page-footer{
+		padding: 0 15% 0 15.6%;
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+
+		&__hash{
+			padding-top: 11px;
+		
+		}
+		&__copyright{
+			padding-top:6px;
+		}
+	}
+	.social{
+		display: inline-block;
+	}
 }
 
