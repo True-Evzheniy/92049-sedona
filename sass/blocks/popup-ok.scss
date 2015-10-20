@@ -1,0 +1,42 @@
+@media(min-width: 768px){
+	.popup-ok{
+		position:absolute;
+		top: 20%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		width: 640px;
+		background-color: #fff;
+		box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.1), -5px 0px 10px 0px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		&__title{
+			@include fonter(30px,40px);
+			font-weight: bold;
+			text-transform: uppercase;
+			padding-bottom: 30px;
+		}
+		&__text{
+			@include fonter(14px,24px);
+			text-transform: uppercase;
+			color: $gray-base;
+		}
+		&__up{
+			padding:60px 110px 36px;
+		}
+		&__down{
+			padding: 44px 91px;
+			background-color: $gray-lighten;
+		}
+
+		&__btn{
+			display: block;
+			padding: 16px 0 ;
+			@include fonter(21px,26px);
+			font-weight: bold;
+			color: #fff;
+			background-color: $blue-base;
+			text-decoration: none;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+}

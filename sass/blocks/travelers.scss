@@ -24,3 +24,14 @@
 		background-color: $gray-lighten;
 	}
 }
+
+@media(min-width: 768px){
+	.travelers{
+		&__col-left{
+		    width: 9.3846153846%;
+		}
+		&__col-right{
+			width: 89.6923076923%;
+		}
+	}
+}

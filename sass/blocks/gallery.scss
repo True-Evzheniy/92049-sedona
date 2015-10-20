@@ -6,7 +6,9 @@
 		padding: 0;
 
 	}
-
+	&__file{
+		display: none;
+	}
 	&__item{
 		position: relative;
     	float: left;
@@ -30,10 +32,32 @@
 		height: 30px;
 		border-radius: 50%;
 		background-color: $gray-lighten;
-		background-image: url("../img/img-del.png");
+		background-image: url("../img/icon-cross.svg");
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: 50%;
 		transform: translate(-50%,-50%);
 	}
 
+}
+
+@media(min-width: 768px){
+	.gallery{
+		padding: 35px;
+		&__del-img{
+			width: 60px;
+			height: 60px;
+			background-size: 40%;
+			left: 100%;
+		}
+		&__item{
+			width: 23.26%;
+			margin-right: 10.79%;
+		}
+		&__file{
+			display: block;
+			@include fonter(14px,24px);
+			text-transform: uppercase;
+		}
+	}	
 }

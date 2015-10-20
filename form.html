@@ -31,10 +31,7 @@
 
 		<section class="intro-text">
 			<h2 class="intro-text__title">Оставьте свой отзыв</h2>
-			<p class="intro-text__text">Помогите нашим отелям стать лучше!<br>
-			Оставьте свой отзыв о них, а также о<br>
-			посященных вами<br>
-			достопримечательностях</p>
+			<p class="intro-text__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а также о посященных вами достопримечательностях</p>
 		</section>
 
 
@@ -42,27 +39,46 @@
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Представьтесь, пожалуйста:</h1>
+				<div class="flexbox">
+				<div class="hotel-form__field">
 				<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
 				<input class="hotel-form__input" type="text" required placeholder="Иванов">
+				</div>
+				<div class="hotel-form__field">
 				<label class="hotel-form__label hotel-form__label--req">Имя:</label>
 				<input class="hotel-form__input" type="text" required placeholder="Пётр">
+				</div>
+				<div class="hotel-form__field">
 				<label class="hotel-form__label">Отчество:</label>
 				<input class="hotel-form__input" type="text" placeholder="Александрович">
+				</div>
+				</div>
 			</div>
 			
 			<div class="hotel-form__item">
-				<h1 class="hotel-form__title">Ваше общее впечатление:</h2>
+				<h1 class="hotel-form__title">Ваше общее впечатление:</h1>
+				<div class="flexbox">
+				<div class="hotel-form__radio-wrap">
 				<input type="radio" id="positive" name="impress"  checked hidden>
 				<label class="hotel-form__radio" for="positive">Скорее положительное</label>
+				</div>
+				<div class="hotel-form__radio-wrap">
 				<input type="radio" id="negative" name="impress" hidden>
 				<label class="hotel-form__radio" for="negative">Скорее отрицательное</label>
+				</div>
+				</div>
 			</div>
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Даты вашей поездки</h2>
+				<div class="flexbox">
+				<div class="hotel-form__field">
 				<label class="hotel-form__label">Дата приезда:</label>
 				<input class="hotel-form__input" type="text" placeholder="4 июля 2015" required>
-				<label class="hotel-form__label">Длительность пребывания:</label>
+				</div>
+				<div class="hotel-form__field">
+				<label class="hotel-form__label hotel-form__label--req hotel-form__label--mobile">Длительность пребывания:</label>
+				<label class="hotel-form__label hotel-form__label--req hotel-form__label--tablet">Дней пребывания:</label>
 				<div class="counter">
 					<a href="" class="counter__btn icon-minus"></a>
 						<div class="counter__display">
@@ -71,13 +87,20 @@
 						</div>
 					<a href="" class="counter__btn icon-plus"></a>
 				</div>
+				</div>
+				<div class="hotel-form__field">
 				<label class="hotel-form__label">Дата отъезда:</label>
 				<input class="hotel-form__input" type="text" placeholder="28 июля 2015" required>
+				</div>
+				</div>
 			</div>
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Кол-во путешественников</h1>
-				<label for="" class="hotel-form__label hotel-form__label--req">Количество путешественников:</label>
+				<div class="flexbox flexbox--center">
+				<div class="hotel-form__field">
+				<label for="" class="hotel-form__label--mobile hotel-form__label hotel-form__label--req">Количество путешественников:</label>
+				<label for="" class="hotel-form__label--width hotel-form__label--tablet hotel-form__label hotel-form__label--req">Кол-во путешественников:</label>
 				<div class="travelerss__counter-wrap">
 					<div class="counter">
 						<a href="" class="counter__btn icon-minus"></a>
@@ -88,19 +111,26 @@
 						<a href="" class="counter__btn icon-plus"></a>
 					</div>
 				</div>
-				
+				</div>
+				</div>
 				<div class="travelers">
 					<div class="travelers__col-left">
 						<span class="hotel-form__label">№</span>
 						<div class="travelers__num">1</div>
 					</div>
-					<div class="travelers__col-right">
+					<div class="travelers__col-right flexbox">
+						<div class="hotel-form__field--small">
 						<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
 						<input type="text" class="hotel-form__input" required placeholder="Иванов">
+						</div>
+						<div class="hotel-form__field--small">
 						<label class="hotel-form__label hotel-form__label--req">Имя:</label>
 						<input type="text" class="hotel-form__input" required placeholder="Пётр">
+						</div>
+						<div class="hotel-form__field--small">
 						<label class="hotel-form__label">Отчество:</label>
 						<input type="text" class="hotel-form__input" placeholder="Александрович">
+						</div>
 					</div>
 				</div>
 
@@ -109,27 +139,43 @@
 						<span class="hotel-form__label">№</span>
 						<div class="travelers__num">2</div>
 					</div>
-					<div class="travelers__col-right">
+					<div class="travelers__col-right flexbox">
+						<div class="hotel-form__field--small">
 						<label class="hotel-form__label hotel-form__label--req">Фамилия:</label>
 						<input type="text" class="hotel-form__input" required placeholder="Иванов">
+						</div>
+						<div class="hotel-form__field--small">
 						<label class="hotel-form__label hotel-form__label--req">Имя:</label>
 						<input type="text" class="hotel-form__input" required placeholder="Пётр">
+						</div>
+						<div class="hotel-form__field--small">
 						<label class="hotel-form__label">Отчество:</label>
 						<input type="text" class="hotel-form__input" placeholder="Александрович">
+						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Посещенные достопримечательности:</h1>
-				<input id="devil" type="checkbox" name="showplace" checked hidden>
-				<label for="devil" class="hotel-form__checkbox">Мост дьявола</label>
-				<input id="slidepark" type="checkbox" name="showplace" hidden>
-				<label for="slidepark" class="hotel-form__checkbox">Слайд-парк</label>
-				<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
-				<label for="mountainbell" class="hotel-form__checkbox">Гора-колокол</label>
-				<input id="redrock" type="checkbox" name="showplace" checked hidden>
-				<label for="redrock" class="hotel-form__checkbox">Красные скалы</label>
+				<div class="flexbox--wrap">
+					<div class="hotel-form__boxcheck">
+						<input id="devil" type="checkbox" name="showplace" checked hidden>
+						<label for="devil" class="hotel-form__checkbox">Мост дьявола</label>
+					</div>
+					<div class="hotel-form__boxcheck">
+						<input id="slidepark" type="checkbox" name="showplace" hidden>
+						<label for="slidepark" class="hotel-form__checkbox">Слайд-парк</label>
+					</div>
+					<div class="hotel-form__boxcheck">
+						<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
+						<label for="mountainbell" class="hotel-form__checkbox">Гора-колокол</label>
+					</div>
+					<div class="hotel-form__boxcheck">
+						<input id="redrock" type="checkbox" name="showplace" checked hidden>
+						<label for="redrock" class="hotel-form__checkbox">Красные скалы</label>
+					</div>
+				</div>
 			</div>
 
 			<div class="hotel-form__item">
@@ -137,65 +183,45 @@
 				<input type="file" id="download" hidden>
 				<label for="download" class="hotel-form__btn hotel-form__btn--gray-theme">Выбрать фотографии</label>
 				
-				<div class="gallery">
-					<ul class="gallery__list">
+			<div class="gallery">
+					<ul class="gallery__list clearfix">
 						
 						<li class="gallery__item">
 							<div class="gallery__img-wrap">
 								<img width="100%" src="./img/img-gallery.png" alt="">
 							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
 							<a href="" class="gallery__del-img"></a>
 						</li>
+						
 						<li class="gallery__item">
 							<div class="gallery__img-wrap">
 								<img width="100%" src="./img/img-gallery.png" alt="">
 							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
 							<a href="" class="gallery__del-img"></a>
 						</li>
+						
 						<li class="gallery__item">
 							<div class="gallery__img-wrap">
 								<img width="100%" src="./img/img-gallery.png" alt="">
 							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
 							<a href="" class="gallery__del-img"></a>
 						</li>
+						
 						<li class="gallery__item">
 							<div class="gallery__img-wrap">
 								<img width="100%" src="./img/img-gallery.png" alt="">
 							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
 							<a href="" class="gallery__del-img"></a>
 						</li>
-						<li class="gallery__item">
-							<div class="gallery__img-wrap">
-								<img width="100%" src="./img/img-gallery.png" alt="">
-							</div>
-							<a href="" class="gallery__del-img"></a>
-						</li>
-						</li>
-						<li class="gallery__item">
-							<div class="gallery__img-wrap">
-								<img width="100%" src="./img/img-gallery.png" alt="">
-							</div>
-							<a href="" class="gallery__del-img"></a>
-						</li>
-						<li class="gallery__item">
-							<div class="gallery__img-wrap">
-								<img width="100%" src="./img/img-gallery.png" alt="">
-							</div>
-							<a href="" class="gallery__del-img"></a>
-						</li>
-						<li class="gallery__item">
-							<div class="gallery__img-wrap">
-								<img width="100%" src="./img/img-gallery.png" alt="">
-							</div>
-							<a href="" class="gallery__del-img"></a>
-						</li>
-	
-					</ul>
-					
-				</div>	
-				<input type="submit" class="hotel-form__btn" placeholder="Отправить отзыв">
+					</ul>	
+			
+			<input type="submit" class="hotel-form__btn" placeholder="Отправить отзыв">
 			</div>
-
+			</div>
 		</form>
 
 		<footer class="page-footer">
@@ -207,7 +233,23 @@
 					<li class="social__item"><a href="#" class="icon-youtube social__link"><span>Мы на ютюбе</span></a></li>
 				</ul>
 			</div>
+			<div class="page-footer__copyright">Разработано<a href="http://htmlacademy.ru" class="page-footer__link"></a></div>
 		</footer>
-	</div>
+
+		<div class="popup-error">
+			<div class="popup-error__title">Что-то пошло не так!</div>
+			<div class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+			<a href="" class="popup-error__btn">Ок</a>
+		</div>
+		<div class="popup-ok">
+			<div class="popup-ok__up">
+				<div class="popup-ok__title">Ваш отзыв отправлен</div>
+				<div class="popup-ok__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</div>
+			</div>
+			<div class="popup-ok__down">
+				<div class="popup-ok__btn">Закрыть окно</div>
+			</div>
+		</div>
+
 </body>
 </html>
