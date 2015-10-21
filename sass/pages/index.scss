@@ -229,6 +229,13 @@
 		text-decoration: none;
 		background-color: $blue-base;
 		color:#fff;
+		&:hover{
+			background-color: $blue-hover;
+		}
+			&:active{
+		background-color: $blue-active;
+		color: #94b9d2;
+		}
 	}
 	&__title{
 		margin: 0;
@@ -299,6 +306,9 @@
 			height: 256px;
 			padding:0 50px 0;
 			box-sizing: border-box;
+			&--right{
+				float: right;
+			}
 			&--mask:before{
 				display: none;
 			}

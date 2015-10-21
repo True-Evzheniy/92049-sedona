@@ -31,6 +31,13 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			cursor: pointer;
+			&:hover{
+			background-color: $blue-hover;
+			}
+			&:active{
+			background-color: $blue-active;
+			color: #94b9d2;
+			}
 		}
 	}
 }

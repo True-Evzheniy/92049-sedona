@@ -76,6 +76,12 @@
 		text-transform: uppercase;
 		padding-left: 20px;
 		color: $gray-base;
+		cursor:pointer;
+		&--center{
+			text-align: center;
+			padding-left: 0px;
+			cursor: auto;
+		}
 
 		&--req:after{
 			content: ' *';
@@ -95,6 +101,7 @@
 		font-weight: bold;
 		background-color: $gray-lighten;
 		border: none;
+		cursor:pointer;
 		@include prefixes(box-sizing, border-box);
 		&:hover{
 			background-color: $gray-lighter;
@@ -115,6 +122,7 @@
 		@include fonter(18px,26px);
 		font-weight: bold;
 		color: #000;
+		cursor: pointer;
 		
 
 		&:before{
@@ -137,6 +145,7 @@
 		@include fonter(18px,26px);
 		font-weight: bold;
 		color: #000;
+		cursor: pointer;
 		
 		
 		&:before{
@@ -166,12 +175,27 @@
 		color: #fff;
 		cursor: pointer;
 		box-sizing:border-box;
+		&:hover{
+			background-color: $blue-hover;
+		}
+		&:active{
+			background-color: $blue-active;
+			color: #94b9d2;
+		}
 
 	}	
 	
 	&__btn--gray-theme{
 		background-color: $gray-lighten;
-		color: $gray-base;
+		color: #d2d2d2;
+		&:hover{
+			background-color: $gray-lighter;
+			color: #8c8c8c;
+		}
+		&:active{
+			background-color: $gray-active;
+			color: #afafaf;
+		}
 	}
 
 
