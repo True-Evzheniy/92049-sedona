@@ -28,15 +28,31 @@
 		left: 50%;
 		top: 0;
 		display: block;
+		padding-left:9px;
+		padding-top:7px;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
 		background-color: $gray-lighten;
-		background-image: url("../img/icon-cross.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 50%;
 		transform: translate(-50%,-50%);
+		box-sizing:border-box;
+		&:hover {
+			background-color: $gray-lighter;
+			& .gallery__cross{
+				fill: #8c8c8c;
+			}
+		}
+		&:active{
+			background-color: $gray-active;
+			& .gallery__cross{
+				fill: #c4c4c4;
+			}
+		}
+
+	}
+	&__cross{
+		width: 12px;
+		height: 12px;
 	}
 
 }
@@ -47,8 +63,9 @@
 		&__del-img{
 			width: 60px;
 			height: 60px;
-			background-size: 40%;
 			left: 100%;
+			padding-left: 18px;
+			padding-top: 18px;
 		}
 		&__item{
 			width: 23.26%;
@@ -58,6 +75,11 @@
 			display: block;
 			@include fonter(14px,24px);
 			text-transform: uppercase;
+		}
+		&__cross{
+			width:23px;
+			height: 23px;
+
 		}
 	}	
 }

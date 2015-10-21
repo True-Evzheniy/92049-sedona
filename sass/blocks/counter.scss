@@ -11,7 +11,14 @@
 		@include fonter(20px, 58px);
 		font-weight: bold;
 		color: $gray-trans;
-
+		&:hover{
+			background-color: $gray-lighter;
+			color: #8c8c8c;
+		}
+		&:active{
+			background-color: $gray-active;
+			color: #c4c4c4;
+		}
 		&:last-child{
 			float:right;
 		}

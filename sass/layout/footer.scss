@@ -26,9 +26,14 @@
 		vertical-align: middle;
 		width: 36px;
 		height: 36px;
-		background-image: url('../img/htmlacademy.svg');
-		background-repeat: no-repeat;
+		&:hover .page-footer__academy{
+			fill: $blue-base;
+		}
+		&:active .page-footer__academy{
+			fill: #b2b2b2;
+		}
 	}
+
 
 }
 
@@ -56,6 +61,13 @@
 		line-height: 48px;
 		background-color: $blue-base;
 		color: #fff;
+		&:hover{
+			background-color: #669ec0;
+		}
+		&:active{
+			background-color: #5496bd;
+			color: #88b6d1;
+		}
 
 	}
 
