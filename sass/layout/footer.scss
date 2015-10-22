@@ -22,11 +22,18 @@
 
 	&__link{
 		display: inline-block;
+		margin-left: 10px;
 		vertical-align: middle;
 		width: 36px;
 		height: 36px;
-		background-image: url('../img/htmlacademy.svg');
+		&:hover .page-footer__academy{
+			fill: $blue-base;
+		}
+		&:active .page-footer__academy{
+			fill: #b2b2b2;
+		}
 	}
+
 
 }
 
@@ -54,8 +61,35 @@
 		line-height: 48px;
 		background-color: $blue-base;
 		color: #fff;
+		&:hover{
+			background-color: #669ec0;
+		}
+		&:active{
+			background-color: #5496bd;
+			color: #88b6d1;
+		}
 
 	}
 
+}
+
+@media(min-width: 768px){
+	.page-footer{
+		padding: 0 15% 0 15.6%;
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+
+		&__hash{
+			padding-top: 11px;
+		
+		}
+		&__copyright{
+			padding-top:6px;
+		}
+	}
+	.social{
+		display: inline-block;
+	}
 }
 

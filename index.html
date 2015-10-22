@@ -11,10 +11,10 @@
 		<header сlass="page-header">
 			<div class="page-header__navigation">
 				<nav class="navigation">
-					<ul class="navigation__list">
-						<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Карта штата</a></li>
-						<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Информация</a></li>
-						<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Фото и видео</a></li>
+					<ul class="navigation__list clearfix">
+						<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Карта штата</a></li>
+						<li class="navigation__item  navigation__item--active navigation__item--left"><a class="navigation__link" href="">Информация</a></li>
+						<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Фото и видео</a></li>
 						<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Гостиницы</a></li>
 					</ul>
 					<a href="" class="navigation__close"></a>
@@ -29,22 +29,22 @@
 		<div class="main-intro">
 		</div>
 
-		<section class="reasons">
+		<section class="reasons clearfix">
 
 			<div class="reasons__header">
-				<h2 class="block__title">Седона - небольшой <br>городок в Аризоне, <br>заслуживающий большего!</h2>
+				<h2 class="block__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
 				<p class="block__text">Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
 			</div>
 
 			<div class="reasons__item reasons__item--light reasons__item--mask">
 				<h3 class="reasons__title reasons__title--light">Настоящий городок</h3>
-				<p class="reasons__num reasons__num--light">- #1 -</p>
+				<p class="reasons__num reasons__num--light">- №1 -</p>
 				<p class="reasons__about reasons__about--light">Седона не атракцион для туристов, там течет своя жизнь</p>
 			</div>
 
-			<img src="img/motel.jpg" alt="" class="reasons__image" width="100%" height="auto">
+			<div class="reasons__image reasons__image--city"></div>
 
-			<div class="features">
+			<div class="features clearfix">
 				<div class="features__item">
 					<h2 class="features__title features__title--img-house">Жилье</h2>
 					<p class="features__about">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
@@ -59,13 +59,13 @@
 				</div>
 			</div>
 
-			<div class="reasons__item reasons__item--light">
+			<div class="reasons__item reasons__item--right reasons__item--light">
 				<h3 class="reasons__title reasons__title--light">Там есть мост дьявола</h3>
 				<p  class="reasons__num reasons__num--light">- №2 -</p>
 				<p  class="reasons__about reasons__about--light">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
 			</div>
 
-			<img src="img/bridge.jpg" alt="мост" class="reasons__image" width="100%" height="auto">
+			<div class="reasons__image reasons__image--bridge"></div>
 
 			<div class="reasons__item">
 				<h2 class="reasons__title">Небольшая площадь</h2>
@@ -88,8 +88,8 @@
 		</section>
 
 		<section class="hotel-search">
-			<h1 class="block__title">Заинтересовались?</h1>
-			<p class="block__text">Укажите предполагаемые даты поездки и покажем вам лучшие предложения гостиниц в седоне</p>
+			<h1 class="hotel-search__title">Заинтересовались?</h1>
+			<p class="hotel-search__text">Укажите предполагаемые даты поездки и покажем вам лучшие предложения гостиниц в седоне</p>
 			<a href="#" class="hotel-search__btn">Найти гостиницу</a>
 		</section>
 
@@ -104,7 +104,17 @@
 					<li class="social__item"><a href="#" class="icon-youtube social__link"><span>Мы на ютюбе</span></a></li>
 				</ul>
 			</div>
-			<div class="page-footer__copyright">Разработано<a href="http://htmlacademy.ru" class="page-footer__link"></a></div>
+			<div class="page-footer__copyright">Разработано<a href="http://htmlacademy.ru" class="page-footer__link">
+				<svg version="1.0" id="Layer_1" class="page-footer__academy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
+	l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
+	l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
+	l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65
+	l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036
+	v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+</svg>
+			</a></div>
 		</footer>
 	</div>	
 	<!-- <script src="js/script.js"></script> -->

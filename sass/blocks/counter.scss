@@ -1,18 +1,24 @@
 .counter{
 	text-align: center;
 	&__btn{
+		display: block;
 		float: left;
 		padding: 0;
 		width: 61px;
 		height: 58px;
 		border: none;
-		outline: none;
-		border-radius:0;
 		background-color: $gray-lighten;
-		@include fonter(20px, 26px);
+		@include fonter(20px, 58px);
 		font-weight: bold;
 		color: $gray-trans;
-
+		&:hover{
+			background-color: $gray-lighter;
+			color: #8c8c8c;
+		}
+		&:active{
+			background-color: $gray-active;
+			color: #c4c4c4;
+		}
 		&:last-child{
 			float:right;
 		}
@@ -51,4 +57,21 @@
 		font-weight: bold;
 		opacity: 0.3;
 	}	
+}
+
+@media(min-width: 768px){
+	.counter{
+		&__btn{
+			width: 33.33%;
+		}
+		&__input{
+			width: 100%;
+		}
+		&__display{
+			width: 33.33%
+		}
+		&__right{
+			display: none;
+		}
+	}
 }
