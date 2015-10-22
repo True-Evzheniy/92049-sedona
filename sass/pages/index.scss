@@ -89,7 +89,7 @@
 	&__title{
 		margin:0;
 		padding-top: 29px;
-		padding-bottom:14px;
+		padding-bottom:10px;
 		font-family: $font-base;
 		font-size: 18px;
 		line-height: 26px;
@@ -98,14 +98,14 @@
 		color: #000;
 
 		&--light{
-			padding-top: 41px;
+			padding-top: 40px;
 			color: #fff;
 		}
 	}
 
 	&__num{
 		margin: 0;
-		padding-bottom: 26px;
+		padding-bottom: 14px;
 		font-family: $font-base;
 		font-size: 14px;
 		line-height: 21px;
@@ -120,7 +120,7 @@
 		margin: 0px;
 		padding-left: 9%;
 		padding-right: 9%;
-		padding-bottom: 30px;
+		padding-bottom: 28px;
 		font-family: $font-base;
 		font-size: 14px;
 		line-height: 21px;
@@ -135,7 +135,7 @@
 
 .block__title{
 	margin: 0;
-	padding-bottom:30px;
+	padding-bottom:27px;
 	font-family: $font-base;
 	text-align: center;
 	font-size:18px;
@@ -146,7 +146,7 @@
 }
 .block__text{
 	margin:0;
-	padding-bottom:28px;
+	padding-bottom:25px;
 	font-family: $font-base;
 	text-align: center;
 	font-size:14px;
@@ -155,9 +155,10 @@
 }
 
 .features{
-	padding-top: 40px;
+	padding-top: 39px;
 	padding-left: 21.8%;
 	padding-right: 12.5%;
+	padding-bottom: 8px;
 	&__item{
 
 		box-sizing: border-box;
@@ -166,7 +167,7 @@
 	&__title{
 		position: relative;
 		margin: 0;
-		padding-bottom: 19px;
+		padding-bottom: 14px;
 		font-family: $font-base;
 		font-size: 18px;
 		line-height: 26px;
@@ -203,7 +204,7 @@
 
 	&__about{
 		margin: 0;
-		padding-bottom:40px;
+		padding-bottom:28px;
 		font-family: $font-base;
 		font-size: 14px;
 		line-height: 21px;
@@ -239,7 +240,7 @@
 	}
 	&__title{
 		margin: 0;
-		padding-bottom:30px;
+		padding-bottom:20px;
 		font-family: $font-base;
 		text-align: center;
 		font-size:21px;
@@ -250,7 +251,7 @@
 	}
 	&__text{
 	margin:0;
-	padding-bottom:40px;
+	padding-bottom:34px;
 	font-family: $font-base;
 	text-align: center;
 	font-size:14px;
@@ -264,7 +265,7 @@
 
 .map{
 	display: block;
-	margin-bottom: 38px;
+	margin-bottom: 37px;
 	width: 100%;
 	height:350px;
 	background: url('../img/map.jpg') no-repeat;
