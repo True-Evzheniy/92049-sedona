@@ -301,6 +301,12 @@
 	}
 
 	.reasons{
+		&__header{
+			padding-top: 57px;
+			padding-left: 18.23%;
+			padding-right: 18.23%;
+		}
+
 		&__item{
 			float: left;
 			width: 33.33%;
@@ -326,6 +332,13 @@
 			width: 66.67%;
 			float:right;
 		}
+		
+		&__num{
+			padding-bottom: 21px;
+		}
+		&__title{
+			padding-top: 45px;
+		}
 
 
 
@@ -338,6 +351,7 @@
 		padding: 0;
 		&__title{
 			font-size: 21px;
+			padding-bottom: 20px;
 			&:before{
 				content: '';
 				position: absolute;
@@ -356,22 +370,28 @@
 			text-align: center;
 			width: 33.33%;
 			float: left;
-
+		}
+		&__about{
+			padding-bottom: 20px;
 		}
 	}
 	.hotel-search{
-		padding:58px 155px 58px;
+		padding:53px 155px 58px;
 		&__title{
-			padding-bottom: 35px;
+			padding-bottom: 29px;
 			@include fonter(30px,30px);
 		}
 		&__text{
-			padding-bottom: 44px;
+			padding-bottom: 42px;
 		}
 	}
 
 	.map{
 		background-image: url("../img/map-tablet.jpg")
+	}
+
+	.block__text{
+		padding-bottom: 50px;
 	}
 
 
