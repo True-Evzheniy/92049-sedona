@@ -21,3 +21,22 @@
 		justify-content: flex-start;
 	}
 }
+
+@media(min-width: 1200px){
+	.flexbox--radio{
+		margin-top: 18px;
+		justify-content:center;
+		margin-bottom: -13px;
+
+	}
+	.flexbox--center{
+		display: flex;
+		justify-content:flex-start;
+	}
+	.flexbox--wrap{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+}
+

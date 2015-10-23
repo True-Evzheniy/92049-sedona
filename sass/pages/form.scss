@@ -200,6 +200,9 @@
 			background-color: $gray-active;
 			color: #afafaf;
 		}
+		&:before{
+			content: "загрузить фотографии";
+		}
 	}
 
 

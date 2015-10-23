@@ -38,3 +38,16 @@
 		}
 	}
 }
+@media(min-width: 1200px){
+	.travelers{
+		margin-top: 16px;
+		&__col-left{
+		    width: 61px;
+		    margin-right: 6px;
+		}
+		&__col-right{
+			width: 890px;
+			float: left;
+		}
+	}
+}

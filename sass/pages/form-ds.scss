@@ -1,0 +1,133 @@
+@media(min-width: 1200px){
+	.intro{
+		padding-top: 101px;
+		padding-bottom: 118px;
+		&:before{
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 460px;
+		height: 79px;
+
+		}
+		&:after{
+		height: 57px;
+		background: url('../img/bg-sedona-mask-desktop.png') no-repeat;
+		background-size:101% 57px;
+		background-position: 0 0px
+		}
+	}
+
+	.intro-text{
+		padding:114px 30% 0 30%;
+		border-bottom:none;
+		&__title{
+			font-size: 30px;
+			padding-bottom: 31px;
+		}
+	}
+
+
+	.hotel-form{
+		&__item{
+			border: none;
+			padding-top:40px;
+			padding-bottom: 12px;
+			padding-left: 120px;
+			padding-right: 120px;
+		}
+
+
+		&__title{
+			position:relative;
+			font-size: 21px;
+			&:before{
+					content: '';
+					width: 17.5%;
+					height: 1px;
+					background-color: #dbdbdb;
+					position: absolute;
+					left: 0;
+					top: 25%;
+			}
+			&:after{
+					content: '';
+					width: 17.5%;
+					height: 1px;
+					background-color: #dbdbdb;
+					position: absolute;
+					right: 0;
+					top: 25%;
+			}
+			&--narrow{
+				padding-right: 30%;
+				padding-left: 30%;
+			}
+		}
+		&__travelers-wrap{
+			margin-top: -10px; 
+		}
+
+		&__label{
+			&--mobile{
+				display: none;
+			}
+			
+			&--tablet{
+				display: block;
+			}
+			&--width{
+				width: 115%;
+				margin-left: -8%;
+				padding-left: 0;
+				text-align: center;
+			}
+		}
+
+		&__field{
+			width: 27%;
+			&--small{
+				width: 280px;
+				&:first-child{
+					width: 212px;
+				}
+			}
+		}
+		&__radio-wrap{
+			width: 30%;
+			margin-left: 60px;
+
+		}
+		&__checkbox{
+			padding-bottom:30px;
+		}
+		&__boxcheck{
+			margin-top: 17px;
+			width: 35%;
+			margin-bottom: -17px;
+		}
+		&__btn{
+			margin-left: auto;
+			margin-right: auto;
+			width: 458px;
+			&--gray-theme{
+				width: 100%;
+				margin-top: 32px;
+				background-color: $blue-base;
+				color: #fff;
+				&:hover{
+					background-color: $blue-hover;
+					color: #fff;
+				}
+				&:active{
+					background-color: $blue-active;
+					color: #94b9d2;
+				}
+			}
+			&--gray-theme:before{
+				content: "Перетащите фотографии сюда";
+			}
+		}
+	}
+
+}

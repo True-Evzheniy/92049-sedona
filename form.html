@@ -58,7 +58,7 @@
 			
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Ваше общее впечатление:</h1>
-				<div class="flexbox">
+				<div class="flexbox flexbox--radio">
 				<div class="hotel-form__radio-wrap">
 				<input type="radio" id="positive" name="impress"  checked hidden>
 				<label class="hotel-form__radio" for="positive">Скорее положительное</label>
@@ -183,7 +183,7 @@
 			<div class="hotel-form__item">
 				<h1 class="hotel-form__title">Загрузите фотографии</h1>
 				<input type="file" id="download" hidden>
-				<label for="download" class="hotel-form__btn hotel-form__btn--gray-theme">Выбрать фотографии</label>
+				<label for="download" class="hotel-form__btn hotel-form__btn--gray-theme"></label>
 				
 			<div class="gallery">
 					<ul class="gallery__list clearfix">
@@ -251,8 +251,10 @@
 						
 					</ul>	
 			
-			<input type="submit" class="hotel-form__btn" placeholder="Отправить отзыв">
+			
 			</div>
+			<input type="submit" id="lastbtn" placeholder="Отправитьотзыв" hidden>
+			<label for="lastbtn" class="hotel-form__btn">Отправить отзыв</label>
 			</div>
 		</form>
 
