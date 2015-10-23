@@ -6,14 +6,32 @@
 	padding:47px 0 47px 0;
 	background-size: cover;
 
-	&:before{
-		content: '';
-		display: block;
+	&__text{
 		margin: 0 auto;
-		width: 280px;
-		height: 295px;
-		background: url('../img/bg-sedona-text.png');
+		display: block;
+		&--welcome{
+		height: 35px;
+		margin-bottom: 8px;
+		fill: $blue-base;
+		}
+		&--tothegorgeous{
+		height: 23px;
+		fill:#766357;
+		margin-bottom: 60px;
+		}
+		&--sedona{
+			fill: #fff;
+			height: 48px;
+			width: 280px;
+			margin-bottom: 68px;
+		}
+		&--becausecanyon{
+			fill: #fff;
+			height: 54px;
+		}
 	}
+	
+
 
 	&:after{
 		content: '';
@@ -276,6 +294,31 @@
 	.main-intro{
 		padding:76px 0 84px 0; 
 
+		&__text{
+		margin: 0 auto;
+		display: block;
+		&--welcome{
+		height: 45px;
+		margin-bottom: 11px;
+		fill: $blue-base;
+		}
+		&--tothegorgeous{
+		height: 30px;
+		fill:#766357;
+		margin-bottom: 54px;
+		}
+		&--sedona{
+			fill: #fff;
+			height: 78px;
+			width: 458px;
+			margin-bottom: 56px;
+		}
+		&--becausecanyon{
+			fill: #fff;
+			height: 80px;
+		}
+	}
+
 		&:after{
 			content: '';
 			position: absolute;
@@ -286,14 +329,7 @@
 			background: url('../img/bg-sedona-mask-tablet.png') no-repeat;
 			background-size:100% 37px;
 		}
-		&:before{
-			content: '';
-			display: block;
-			margin: 0 auto;
-			width: 458px;
-			height: 352px;
-			background: url('../img/bg-sedona-text-tablet.png') no-repeat;
-		}
+
 	}
 
 	.block__title{
@@ -393,6 +429,4 @@
 	.block__text{
 		padding-bottom: 50px;
 	}
-
-
 }

@@ -24,12 +24,18 @@
 		border-bottom:none;
 		&__title{
 			font-size: 30px;
+			padding-bottom: 31px;
 		}
 	}
+
 
 	.hotel-form{
 		&__item{
 			border: none;
+			padding-top:40px;
+			padding-bottom: 12px;
+			padding-left: 7%;
+			padding-right: 7%;
 		}
 
 
@@ -54,6 +60,13 @@
 					right: 0;
 					top: 25%;
 			}
+			&--narrow{
+				padding-right: 30%;
+				padding-left: 30%;
+			}
+		}
+		&__travelers-wrap{
+			margin-top: -10px; 
 		}
 
 		&__label{
@@ -90,7 +103,7 @@
 		&__btn{
 			margin-left: auto;
 			margin-right: auto;
-			width: 59.9%;
+			width: 78%;
 		}
 	}
 
