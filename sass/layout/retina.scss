@@ -1,0 +1,26 @@
+@media(min-resolution: 1.5dppx){
+	
+	.intro{
+    	background: url("../img/photo-background@2x.jpg") no-repeat;
+    }
+    .main-intro{
+    	background: url("../img/photo-background@2x.jpg") no-repeat;
+    }
+
+    .navigation__logo{
+    	background-image: url('../img/logo-sedona@2x.png');
+    }
+
+	.reasons__image--city{
+		background-image: url("../img/photo-city@2x.jpg");
+	}
+   .reasons__image--bridge{
+		background-image: url("../img/photo-bridge@2x.jpg");
+   }
+}
+
+@media(min-resolution: 2.5dppx){
+	.navigation__logo{
+		background-image: url('../img/logo-sedona@3x.png');
+	}
+}
