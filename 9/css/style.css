@@ -1,0 +1,1925 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+.navigation {
+  position: relative; }
+  .navigation__item {
+    height: 54px;
+    background-color: #81b3d2;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8; }
+    .navigation__item:last-child {
+      border-bottom: none;
+      box-shadow: inset 0 -10px 10px -10px #363636; }
+    .navigation__item:first-child {
+      border-top: 1px solid #81b3d2; }
+      .navigation__item:first-child:hover {
+        border-top: 1px solid #81b3d2; }
+    .navigation__item:hover {
+      background-color: #669ec0;
+      border-top: 1px solid #86b2cd; }
+    .navigation__item:active {
+      background-color: #5496bd;
+      border-top: 1px solid #77acca; }
+    .navigation__item:active a {
+      color: #94b9d2; }
+  .navigation__link {
+    display: block;
+    padding: 18px 0 18px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px; }
+  .navigation__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .navigation__close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 23px;
+    height: 23px; }
+    .navigation__close:after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: -3px;
+      height: 5px;
+      width: 28px;
+      background-color: #fff;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .navigation__close:before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: -3px;
+      height: 5px;
+      width: 28px;
+      background-color: #fff;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .navigation__top-panel {
+    position: relative;
+    height: 56px;
+    background-color: #fff; }
+  .navigation__logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
+    width: 138px;
+    height: 70px;
+    background-image: url("../img/logo.png");
+    z-index: 1; }
+  .navigation__burger {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    padding: 9px 23px 13px 0; }
+    .navigation__burger span, .navigation__burger span:after, .navigation__burger span:before {
+      position: absolute;
+      display: block;
+      width: 23px;
+      height: 4px;
+      background-color: #81b3d2;
+      content: ''; }
+    .navigation__burger span:before {
+      bottom: -9px; }
+    .navigation__burger span:after {
+      top: -9px; }
+
+@media (min-width: 768px) {
+  .navigation__close, .navigation__burger {
+    display: none; }
+  .navigation__item {
+    width: 20%;
+    background-color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; }
+    .navigation__item:first-child {
+      border-top: 1px solid #fff; }
+      .navigation__item:first-child:hover {
+        background-color: #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff; }
+    .navigation__item:last-child {
+      box-shadow: none; }
+    .navigation__item--left {
+      float: left; }
+    .navigation__item--right {
+      float: right; }
+    .navigation__item:hover {
+      background-color: #fff;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff; }
+      .navigation__item:hover a {
+        color: #81b3d2; }
+    .navigation__item:active {
+      background-color: none;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff; }
+    .navigation__item:active a {
+      opacity: 0.3;
+      color: #000; }
+    .navigation__item--active a {
+      color: #766357; }
+    .navigation__item--active:hover a {
+      color: #604e43; }
+    .navigation__item--active:active a {
+      opacity: 0.3; }
+  .navigation__link {
+    color: #000;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px; }
+  .navigation__top-panel {
+    position: static;
+    height: 0; }
+  .navigation__list {
+    position: relative; }
+  .navigation__logo {
+    top: 0; } }
+
+@font-face {
+  font-family: 'symbols-sedona';
+  src: url("../font/symbols-sedona.eot?60737633");
+  src: url("../font/symbols-sedona.eot?60737633#iefix") format("embedded-opentype"), url("../font/symbols-sedona.woff?60737633") format("woff"), url("../font/symbols-sedona.ttf?60737633") format("truetype"), url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-sedona";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-up-dir:before {
+  content: '\25b2'; }
+
+/* '▲' */
+.icon-down-dir:before {
+  content: '\25bc'; }
+
+/* '▼' */
+.icon-star:before {
+  content: '\2605'; }
+
+/* '★' */
+.icon-check-off:before {
+  content: '\2610'; }
+
+/* '☐' */
+.icon-check-on:before {
+  content: '\2611'; }
+
+/* '☑' */
+.icon-calendar:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-plus:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-minus:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-twitter:before {
+  content: '\74'; }
+
+/* 't' */
+.icon-facebook:before {
+  content: '\66'; }
+
+/* 'f' */
+.icon-youtube:before {
+  content: '\f39e'; }
+
+/* '' */
+.page-footer {
+  padding-bottom: 30px; }
+  .page-footer__hash {
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000; }
+  .page-footer__copyright {
+    padding-top: 40px;
+    text-align: center;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase; }
+  .page-footer__link {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px; }
+    .page-footer__link:hover .page-footer__academy {
+      fill: #81b3d2; }
+    .page-footer__link:active .page-footer__academy {
+      fill: #b2b2b2; }
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0px;
+  text-align: center; }
+
+.social__item {
+  display: inline-block;
+  margin-right: 6px; }
+
+.social span {
+  display: none; }
+
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 48px;
+  background-color: #81b3d2;
+  color: #fff; }
+  .social__link:hover {
+    background-color: #669ec0; }
+  .social__link:active {
+    background-color: #5496bd;
+    color: #88b6d1; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    padding: 0 7.81% 0 7.81%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    box-sizing: border-box; }
+    .page-footer__hash {
+      padding-top: 11px; }
+    .page-footer__copyright {
+      padding-top: 6px; }
+  .social {
+    display: inline-block; } }
+
+.container {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.1), -5px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    max-width: 1199px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    max-width: 1400px; } }
+
+.main-intro {
+  position: relative;
+  background: url("../img/photo-background@1x.jpg") no-repeat;
+  padding: 47px 0 47px 0;
+  background-size: cover; }
+  .main-intro__text {
+    margin: 0 auto;
+    display: block; }
+    .main-intro__text--welcome {
+      height: 35px;
+      margin-bottom: 8px;
+      fill: #81b3d2; }
+    .main-intro__text--tothegorgeous {
+      height: 23px;
+      fill: #766357;
+      margin-bottom: 60px; }
+    .main-intro__text--sedona {
+      fill: #fff;
+      height: 48px;
+      width: 280px;
+      margin-bottom: 68px; }
+    .main-intro__text--becausecanyon {
+      fill: #fff;
+      height: 54px; }
+  .main-intro:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    height: 27px;
+    width: 100%;
+    background: url("../img/bg-sedona-mask.png") no-repeat;
+    background-size: 100% 27px; }
+
+.reasons__header {
+  margin: 0;
+  padding: 40px 7% 0 7%; }
+
+.reasons__item {
+  position: relative;
+  text-align: center;
+  background-color: #eee; }
+  .reasons__item:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 87.5%;
+    height: 1px;
+    background-color: #d6d6d6; }
+  .reasons__item:last-child:after {
+    display: none; }
+  .reasons__item--mask:before {
+    content: '';
+    display: block;
+    height: 17px;
+    background-color: #81b3d2;
+    background: url("../img/reasons__item--mask.png") no-repeat 50% 0%;
+    background-size: 100% 17px; }
+  .reasons__item--light {
+    background-color: #81b3d2; }
+    .reasons__item--light:after {
+      display: none; }
+
+.reasons__image {
+  height: 256px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover; }
+  .reasons__image--city {
+    background-image: url("../img/photo-city@1x.jpg"); }
+  .reasons__image--bridge {
+    background-image: url("../img/photo-bridge@1x.jpg"); }
+
+.reasons__title {
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 10px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000; }
+  .reasons__title--light {
+    padding-top: 40px;
+    color: #fff; }
+
+.reasons__num {
+  margin: 0;
+  padding-bottom: 14px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333; }
+  .reasons__num--light {
+    color: #fff; }
+
+.reasons__about {
+  margin: 0px;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 28px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333; }
+  .reasons__about--light {
+    padding-bottom: 41px;
+    color: #fff; }
+
+.block__title {
+  margin: 0;
+  padding-bottom: 27px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000;
+  text-transform: uppercase; }
+
+.block__text {
+  margin: 0;
+  padding-bottom: 25px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase; }
+
+.features {
+  padding-top: 39px;
+  padding-left: 21.8%;
+  padding-right: 12.5%;
+  padding-bottom: 8px; }
+  .features__item {
+    box-sizing: border-box; }
+  .features__title {
+    position: relative;
+    margin: 0;
+    padding-bottom: 14px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000; }
+    .features__title:before {
+      content: '';
+      position: absolute;
+      left: -50px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      -webkit-transform: translateY(-25%);
+              transform: translateY(-25%); }
+    .features__title--img-house:before {
+      background: url(../img/icon-house.svg) no-repeat;
+      background-size: 85%; }
+    .features__title--img-souvenirs:before {
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 85%; }
+    .features__title--img-food:before {
+      background: url(../img/icon-burger.svg) no-repeat;
+      background-size: 85%; }
+  .features__about {
+    margin: 0;
+    padding-bottom: 28px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #333; }
+
+.hotel-search {
+  padding: 29px 6.5% 49px; }
+  .hotel-search__btn {
+    display: block;
+    padding: 16px  0;
+    text-align: center;
+    width: 100%;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #81b3d2;
+    color: #fff; }
+    .hotel-search__btn:hover {
+      background-color: #669ec0; }
+    .hotel-search__btn:active {
+      background-color: #5496bd;
+      color: #94b9d2; }
+  .hotel-search__title {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000;
+    text-transform: uppercase; }
+  .hotel-search__text {
+    margin: 0;
+    padding-bottom: 34px;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #333333; }
+
+.map {
+  display: block;
+  margin-bottom: 37px;
+  width: 100%;
+  height: 350px;
+  background: url("../img/map.jpg") no-repeat;
+  background-size: 100% auto; }
+
+@media (min-width: 768px) {
+  .main-intro {
+    padding: 76px 0 84px 0; }
+    .main-intro__text {
+      margin: 0 auto;
+      display: block; }
+      .main-intro__text--welcome {
+        height: 45px;
+        margin-bottom: 11px;
+        fill: #81b3d2; }
+      .main-intro__text--tothegorgeous {
+        height: 30px;
+        fill: #766357;
+        margin-bottom: 54px; }
+      .main-intro__text--sedona {
+        fill: #fff;
+        height: 78px;
+        width: 458px;
+        margin-bottom: 56px; }
+      .main-intro__text--becausecanyon {
+        fill: #fff;
+        height: 80px; }
+    .main-intro:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      display: block;
+      height: 37px;
+      width: 100%;
+      background: url("../img/bg-sedona-mask-tablet.png") no-repeat;
+      background-size: 100% 37px; }
+  .block__title {
+    font-size: 21px; }
+  .reasons__header {
+    padding-top: 57px;
+    padding-left: 18.23%;
+    padding-right: 18.23%; }
+  .reasons__item {
+    float: left;
+    width: 33.33%;
+    height: 256px;
+    padding: 0 50px 0;
+    box-sizing: border-box; }
+    .reasons__item--right {
+      float: right; }
+    .reasons__item--mask:before {
+      display: none; }
+    .reasons__item:after {
+      display: none; }
+  .reasons__about {
+    padding-left: 0;
+    padding-right: 0; }
+  .reasons__image {
+    width: 66.67%;
+    float: right; }
+  .reasons__num {
+    padding-bottom: 21px; }
+  .reasons__title {
+    padding-top: 45px; }
+  .reasons__title {
+    font-size: 21px; }
+  .features {
+    padding: 0; }
+    .features__title {
+      font-size: 21px;
+      padding-bottom: 20px; }
+      .features__title:before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        display: block;
+        width: 80px;
+        height: 80px;
+        -webkit-transform: translate(-50%, -100%);
+                transform: translate(-50%, -100%);
+        background-size: 85%;
+        background-position: center; }
+    .features__item {
+      padding: 160px 50px 20px;
+      text-align: center;
+      width: 33.33%;
+      float: left; }
+    .features__about {
+      padding-bottom: 20px; }
+  .hotel-search {
+    padding: 53px 155px 58px; }
+    .hotel-search__title {
+      padding-bottom: 29px;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 30px;
+      line-height: 30px; }
+    .hotel-search__text {
+      padding-bottom: 42px; }
+  .map {
+    background-image: url("../img/map-tablet.jpg"); }
+  .block__text {
+    padding-bottom: 50px; } }
+
+.intro {
+  position: relative;
+  background: url("../img/photo-background@1x.jpg") no-repeat 50% 40%;
+  padding: 49px 0 80px 0;
+  background-size: cover; }
+  .intro:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 174px;
+    height: 30px;
+    background: url("../img/text-sedona.svg");
+    background-size: cover; }
+  .intro:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    height: 27px;
+    width: 100%;
+    background: url("../img/bg-sedona-mask.png") no-repeat;
+    background-size: 100% 27px; }
+
+.intro-text {
+  padding: 73px 6.5% 0 6.5%;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+  .intro-text__title {
+    margin: 0;
+    padding-bottom: 26px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .intro-text__text {
+    margin: 0;
+    padding-bottom: 17px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #333333; }
+
+.hotel-form__item {
+  padding: 18px 6.25% 10px;
+  border-bottom: 1px solid #e5e5e5; }
+  .hotel-form__item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 55px; }
+
+.hotel-form__title {
+  margin: 0;
+  padding-bottom: 25px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.hotel-form__label {
+  display: block;
+  margin: 0;
+  padding-bottom: 7px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-left: 21px;
+  color: #333333;
+  cursor: pointer; }
+  .hotel-form__label--center {
+    text-align: center;
+    padding-left: 0px;
+    cursor: auto; }
+  .hotel-form__label--req:after {
+    content: ' *';
+    color: #ff0000; }
+  .hotel-form__label--tablet {
+    display: none; }
+
+.hotel-form__input {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 16px 20px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  .hotel-form__input:hover {
+    background-color: #e5e5e5; }
+  .hotel-form__input:focus {
+    background-color: #FFF;
+    border: 4px solid #e5e5e5;
+    outline: none;
+    padding: 12px 16px; }
+
+.hotel-form__radio {
+  display: inline-block;
+  margin-top: -2px;
+  padding-bottom: 14px;
+  width: 100%;
+  vertical-align: middle;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer; }
+  .hotel-form__radio:before {
+    content: '';
+    display: inline-block;
+    margin-right: 6.5%;
+    width: 22px;
+    height: 22px;
+    border: 17px solid #f2f2f2;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #f2f2f2; }
+
+.hotel-form__travelers-wrap {
+  padding-top: 5px; }
+
+.hotel-form__checkbox {
+  display: block;
+  padding-bottom: 24px;
+  vertical-align: middle;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer; }
+  .hotel-form__checkbox:before {
+    content: '';
+    display: inline-block;
+    margin-right: 6.5%;
+    width: 56px;
+    height: 56px;
+    border-radius: 3px;
+    vertical-align: middle;
+    background-color: #f2f2f2; }
+
+.hotel-form__btn {
+  display: block;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 16px 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .hotel-form__btn:hover {
+    background-color: #669ec0; }
+  .hotel-form__btn:active {
+    background-color: #5496bd;
+    color: #94b9d2; }
+
+.hotel-form__btn--gray-theme {
+  background-color: #f2f2f2;
+  color: #d2d2d2; }
+  .hotel-form__btn--gray-theme:hover {
+    background-color: #e5e5e5;
+    color: #8c8c8c; }
+  .hotel-form__btn--gray-theme:active {
+    background-color: #d5d5d5;
+    color: #afafaf; }
+  .hotel-form__btn--gray-theme:before {
+    content: "загрузить фотографии"; }
+
+input[type="radio"]:checked + label:before {
+  background-color: #333333; }
+
+input[type="radio"] + label:hover:before {
+  border-color: #e5e5e5;
+  background-color: #e5e5e5; }
+
+input[type="radio"]:checked + label:hover:before {
+  background-color: #333333; }
+
+input[type="radio"] + label:active:before {
+  border-color: #d5d5d5;
+  background-color: #d5d5d5; }
+
+input[type="radio"]:checked + label:active:before {
+  background-color: #a4a4a4; }
+
+input[type="checkbox"]:checked + label:before {
+  background-image: url("../img/checkbox.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+input[type="checkbox"] + label:hover:before {
+  background-color: #e5e5e5; }
+
+input[type="checkbox"] + label:active:before {
+  background-color: #d5d5d5; }
+
+input[type="checkbox"]:checked + label:active:before {
+  background-image: url("../img/checkbox--active.png"); }
+
+.counter {
+  text-align: center;
+  margin-bottom: 10px; }
+  .counter__btn {
+    display: block;
+    float: left;
+    padding: 0;
+    width: 61px;
+    height: 58px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 58px;
+    font-weight: bold;
+    color: #b8b8b8; }
+    .counter__btn:hover {
+      background-color: #e5e5e5;
+      color: #8c8c8c; }
+    .counter__btn:active {
+      background-color: #d5d5d5;
+      color: #c4c4c4; }
+    .counter__btn:last-child {
+      float: right; }
+  .counter__display {
+    display: inline-block;
+    margin: 0 auto;
+    width: 52%;
+    height: 58px;
+    background-color: #f2f2f2; }
+  .counter__input {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent; }
+    .counter__input:hover {
+      background-color: #e5e5e5; }
+    .counter__input:focus {
+      background-color: #FFF;
+      border: 4px solid #e5e5e5;
+      outline: none;
+      padding: 12px 16px; }
+  .counter__right {
+    float: right;
+    width: 50%;
+    padding: 16px 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    opacity: 0.3; }
+
+@media (min-width: 768px) {
+  .counter__btn {
+    width: 33.33%; }
+  .counter__input {
+    width: 100%; }
+  .counter__display {
+    width: 33.33%; }
+  .counter__right {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .counter {
+    text-align: center;
+    margin-bottom: 10px; }
+    .counter__btn {
+      display: block;
+      float: left;
+      padding: 0;
+      width: 61px;
+      height: 58px;
+      border: none;
+      background-color: #f2f2f2;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 20px;
+      line-height: 58px;
+      font-weight: bold;
+      color: #b8b8b8; }
+      .counter__btn:hover {
+        background-color: #e5e5e5;
+        color: #8c8c8c; }
+      .counter__btn:active {
+        background-color: #d5d5d5;
+        color: #c4c4c4; }
+      .counter__btn:last-child {
+        float: right; }
+    .counter__display {
+      display: inline-block;
+      margin: 0 auto;
+      width: 52%;
+      height: 58px;
+      background-color: #f2f2f2; }
+    .counter__input {
+      display: block;
+      float: left;
+      box-sizing: border-box;
+      width: 50%;
+      margin: 0;
+      padding: 16px 20px;
+      border: none;
+      outline: none;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      text-align: center;
+      background-color: transparent; }
+    .counter__right {
+      display: block;
+      float: right;
+      width: 50%;
+      padding: 16px 0;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      opacity: 0.3; } }
+
+.gallery__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.gallery__file {
+  display: none; }
+
+.gallery__item {
+  position: relative;
+  float: left;
+  width: 25%;
+  margin: 0;
+  margin-right: 12.5%;
+  margin-bottom: 35px; }
+  .gallery__item:nth-child(3n) {
+    margin-right: 0; }
+
+.gallery__del-img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  display: block;
+  padding-left: 9px;
+  padding-top: 7px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-sizing: border-box; }
+  .gallery__del-img:hover {
+    background-color: #e5e5e5; }
+    .gallery__del-img:hover .gallery__cross {
+      fill: #8c8c8c; }
+  .gallery__del-img:active {
+    background-color: #d5d5d5; }
+    .gallery__del-img:active .gallery__cross {
+      fill: #c4c4c4; }
+
+.gallery__cross {
+  width: 12px;
+  height: 12px; }
+
+@media (min-width: 768px) {
+  .gallery {
+    padding: 35px; }
+    .gallery__del-img {
+      width: 60px;
+      height: 60px;
+      left: 100%;
+      padding-left: 18px;
+      padding-top: 18px; }
+    .gallery__item {
+      width: 23.26%;
+      margin-right: 10.79%; }
+    .gallery__file {
+      display: block;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase; }
+    .gallery__cross {
+      width: 23px;
+      height: 23px; } }
+
+@media (min-width: 1200px) {
+  .gallery {
+    padding: 35px 0px; }
+    .gallery__item {
+      width: 140px;
+      margin-right: 65px; }
+      .gallery__item:nth-child(3n) {
+        margin-right: 65px; }
+      .gallery__item:nth-child(5n) {
+        margin-right: 0; }
+    .gallery__img-wrap {
+      width: 140px;
+      margin-right: 65px; } }
+
+.travelers {
+  margin-top: 19px; }
+  .travelers:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .travelers__col-left {
+    float: left;
+    width: 61px; }
+  .travelers__col-right {
+    float: right;
+    width: 76%; }
+  .travelers__num {
+    padding: 16px 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f2f2f2; }
+
+@media (min-width: 768px) {
+  .travelers {
+    margin-top: 16px; }
+    .travelers__col-left {
+      width: 9.3846153846%; }
+    .travelers__col-right {
+      width: 89.6923076923%; } }
+
+@media (min-width: 1200px) {
+  .travelers {
+    margin-top: 16px; }
+    .travelers__col-left {
+      width: 61px;
+      margin-right: 6px; }
+    .travelers__col-right {
+      width: 890px;
+      float: left; } }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+@media (min-width: 768px) {
+  .flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .flexbox--center {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .flexbox--wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .flexbox--gallery {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+
+@media (min-width: 1200px) {
+  .flexbox--radio {
+    margin-top: 18px;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: -13px; }
+  .flexbox--center {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .flexbox--wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .intro {
+    padding-top: 104px;
+    padding-bottom: 110px; }
+    .intro:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 460px;
+      height: 79px; }
+    .intro:after {
+      height: 37px;
+      bottom: -1px;
+      background: url("../img/bg-sedona-mask-tablet.png") no-repeat;
+      background-size: 100% 37px;
+      background-position: 0 1px; }
+  .intro-text {
+    padding: 70px 21% 0 21%;
+    border-bottom: none; }
+    .intro-text__title {
+      font-size: 30px;
+      padding-bottom: 31px; }
+  .hotel-form__item {
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 12px;
+    padding-left: 7%;
+    padding-right: 7%; }
+  .hotel-form__title {
+    position: relative;
+    font-size: 21px; }
+    .hotel-form__title:before {
+      content: '';
+      width: 17.5%;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: absolute;
+      left: 0;
+      top: 25%; }
+    .hotel-form__title:after {
+      content: '';
+      width: 17.5%;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: absolute;
+      right: 0;
+      top: 25%; }
+    .hotel-form__title--narrow {
+      padding-right: 30%;
+      padding-left: 30%; }
+  .hotel-form__travelers-wrap {
+    margin-top: -10px; }
+  .hotel-form__label--mobile {
+    display: none; }
+  .hotel-form__label--tablet {
+    display: block; }
+  .hotel-form__label--width {
+    width: 115%;
+    margin-left: -8%;
+    padding-left: 0;
+    text-align: center; }
+  .hotel-form__field {
+    width: 27%; }
+    .hotel-form__field--small {
+      width: 32.590051458%; }
+  .hotel-form__radio-wrap {
+    width: 40%; }
+  .hotel-form__checkbox {
+    padding-bottom: 30px; }
+  .hotel-form__boxcheck {
+    width: 35%; }
+  .hotel-form__btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%; } }
+
+@media (max-width: 767px) {
+  .popup-error {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .popup-error {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 65px 64px 49px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.1), -5px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center; }
+    .popup-error__title {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0 80px 40px; }
+    .popup-error__text {
+      padding-bottom: 38px;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #333333; }
+    .popup-error__btn {
+      display: block;
+      padding: 16px 0;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #81b3d2;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .popup-error__btn:hover {
+        background-color: #669ec0; }
+      .popup-error__btn:active {
+        background-color: #5496bd;
+        color: #94b9d2; } }
+
+@media (max-width: 767px) {
+  .popup-ok {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .popup-ok {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: #fff;
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.1), -5px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center; }
+    .popup-ok__title {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-bottom: 30px; }
+    .popup-ok__text {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #333333; }
+    .popup-ok__up {
+      padding: 60px 110px 36px; }
+    .popup-ok__down {
+      padding: 44px 91px;
+      background-color: #f2f2f2; }
+    .popup-ok__btn {
+      display: block;
+      padding: 16px 0;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #81b3d2;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .popup-ok__btn:hover {
+        background-color: #669ec0; }
+      .popup-ok__btn:active {
+        background-color: #5496bd;
+        color: #94b9d2; } }
+
+@media (min-width: 1200px) {
+  .main-intro {
+    padding: 76px 0 80px 0; }
+    .main-intro__text {
+      margin: 0 auto;
+      display: block; }
+      .main-intro__text--welcome {
+        height: 45px;
+        margin-bottom: 11px;
+        fill: #81b3d2; }
+      .main-intro__text--tothegorgeous {
+        height: 30px;
+        fill: #766357;
+        margin-bottom: 53px; }
+      .main-intro__text--sedona {
+        fill: #fff;
+        height: 78px;
+        width: 458px;
+        margin-bottom: 56px; }
+      .main-intro__text--becausecanyon {
+        fill: #fff;
+        height: 80px; }
+    .main-intro:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      display: block;
+      height: 57px;
+      width: 100%;
+      background: url("../img/bg-sedona-mask-desktop.png") no-repeat;
+      background-size: 101% 57px; }
+  .block__title {
+    font-size: 21px; }
+  .reasons__header {
+    padding-top: 59px;
+    padding-left: 29%;
+    padding-right: 29%; }
+  .reasons__item {
+    float: left;
+    width: 33.33%;
+    height: 256px;
+    padding: 0 70px 0;
+    box-sizing: border-box; }
+    .reasons__item--right {
+      float: right; }
+    .reasons__item--mask:before {
+      display: none; }
+    .reasons__item:after {
+      display: none; }
+  .reasons__about {
+    padding-left: 0;
+    padding-right: 0; }
+  .reasons__image {
+    width: 66.67%;
+    float: right; }
+  .reasons__num {
+    padding-bottom: 21px; }
+  .reasons__title {
+    padding-top: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 21px; }
+    .reasons__title--light {
+      padding-top: 52px; }
+  .features {
+    padding: 0; }
+    .features__title {
+      font-size: 21px;
+      padding-bottom: 20px; }
+      .features__title:before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        display: block;
+        width: 80px;
+        height: 80px;
+        -webkit-transform: translate(-50%, -100%);
+                transform: translate(-50%, -100%);
+        background-size: 85%;
+        background-position: center; }
+    .features__item {
+      padding: 160px 50px 20px;
+      padding-bottom: 63px;
+      text-align: center;
+      width: 33.33%;
+      float: left; }
+    .features__about {
+      padding-bottom: 20px; }
+  .hotel-search {
+    padding: 53px 31% 66px; }
+    .hotel-search__title {
+      padding-bottom: 29px;
+      font-family: "PT Sans", Arial, sans-serif;
+      font-size: 30px;
+      line-height: 30px; }
+    .hotel-search__text {
+      padding-bottom: 47px; }
+  .map {
+    background-image: url("../img/map-tablet.jpg"); }
+  .block__text {
+    padding-bottom: 50px; } }
+
+@media (min-width: 1200px) {
+  .intro {
+    padding-top: 101px;
+    padding-bottom: 118px; }
+    .intro:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 460px;
+      height: 79px; }
+    .intro:after {
+      height: 57px;
+      background: url("../img/bg-sedona-mask-desktop.png") no-repeat;
+      background-size: 101% 57px;
+      background-position: 0 0px; }
+  .intro-text {
+    padding: 114px 30% 0 30%;
+    border-bottom: none; }
+    .intro-text__title {
+      font-size: 30px;
+      padding-bottom: 31px; }
+  .hotel-form__item {
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 12px;
+    padding-left: 120px;
+    padding-right: 120px; }
+  .hotel-form__title {
+    position: relative;
+    font-size: 21px; }
+    .hotel-form__title:before {
+      content: '';
+      width: 17.5%;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: absolute;
+      left: 0;
+      top: 25%; }
+    .hotel-form__title:after {
+      content: '';
+      width: 17.5%;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: absolute;
+      right: 0;
+      top: 25%; }
+    .hotel-form__title--narrow {
+      padding-right: 30%;
+      padding-left: 30%; }
+  .hotel-form__travelers-wrap {
+    margin-top: -10px; }
+  .hotel-form__label--mobile {
+    display: none; }
+  .hotel-form__label--tablet {
+    display: block; }
+  .hotel-form__label--width {
+    width: 115%;
+    margin-left: -8%;
+    padding-left: 0;
+    text-align: center; }
+  .hotel-form__field {
+    width: 27%; }
+    .hotel-form__field--small {
+      width: 280px; }
+      .hotel-form__field--small:first-child {
+        width: 212px; }
+  .hotel-form__radio-wrap {
+    width: 30%;
+    margin-left: 60px; }
+  .hotel-form__checkbox {
+    padding-bottom: 30px; }
+  .hotel-form__boxcheck {
+    margin-top: 17px;
+    width: 35%;
+    margin-bottom: -17px; }
+  .hotel-form__btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 458px; }
+    .hotel-form__btn--gray-theme {
+      width: 100%;
+      margin-top: 32px;
+      background-color: #81b3d2;
+      color: #fff; }
+      .hotel-form__btn--gray-theme:hover {
+        background-color: #669ec0;
+        color: #fff; }
+      .hotel-form__btn--gray-theme:active {
+        background-color: #5496bd;
+        color: #94b9d2; }
+    .hotel-form__btn--gray-theme:before {
+      content: "Перетащите фотографии сюда"; } }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .intro {
+    background: url("../img/photo-background@2x.jpg") no-repeat; }
+  .main-intro {
+    background: url("../img/photo-background@2x.jpg") no-repeat; }
+  .navigation__logo {
+    background-image: url("../img/logo-sedona@2x.png"); }
+  .reasons__image--city {
+    background-image: url("../img/photo-city@2x.jpg"); }
+  .reasons__image--bridge {
+    background-image: url("../img/photo-bridge@2x.jpg"); } }
+
+@media (-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 2.5dppx) {
+  .navigation__logo {
+    background-image: url("../img/logo-sedona@3x.png"); } }
