@@ -70,13 +70,12 @@
 		}
 
 		&__label{
-			&--mobile{
-				display: none;
+			&--days:before{
+				content:"Дней пребывания:";
 			}
-			
-			&--tablet{
-				display: block;
-			}
+			&--travelers:before{
+				content: "Кол-во путешественников";
+			}	
 			&--width{
 				width: 115%;
 				margin-left: -8%;

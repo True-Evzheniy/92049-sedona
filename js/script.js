@@ -1,4 +1,11 @@
+var displays = document.querySelectorAll(".no-js");
 var elements = document.querySelectorAll(".counter");
+
+for(var i = 0; i < displays.length; i++){
+	display = displays[i];
+	display.classList.remove("no-js");	
+	display.classList.add("js");
+}
 
 for(var i = 0; i < elements.length; i++){
 	var parent = elements[i];
@@ -20,7 +27,9 @@ function initNumberField(parent){
 	function changeNumber(operation){
 		var value = Number(input.value);
 		if(isNaN(value)){
-			value = 0;
+			value = 1;
+		} else if(value <= 0){
+			value = 1;
 		}
 		if(operation){
 			input.value = value + 1; 

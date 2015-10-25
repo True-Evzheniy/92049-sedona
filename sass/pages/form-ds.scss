@@ -69,12 +69,11 @@
 		}
 
 		&__label{
-			&--mobile{
-				display: none;
+			&--days:before{
+				content:"Длительность пребывания:";
 			}
-			
-			&--tablet{
-				display: block;
+			&--travelers:before{
+				content: "Количество путешественников";
 			}
 			&--width{
 				width: 115%;

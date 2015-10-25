@@ -86,8 +86,11 @@
 			color: $red;
 		}
 
-		&--tablet{
-			display: none;
+		&--days:before{
+			content:"Длительность пребывания:";
+		}
+		&--travelers:before{
+			content: "Количество путешественников";
 		}
 	}
 
@@ -253,5 +256,17 @@ input[type="checkbox"] + label:active{
 input[type="checkbox"]:checked + label:active{
 	&:before{
 		background-image: url("../img/checkbox--active.png");
+	}
+}
+
+
+@media(min-width:320px){
+	.hotel-form__label{
+		&--days:before{
+			content:"Длительность пребывания:";
+		}
+		&--travelers:before{
+			content: "Количество путешественников";
+		}
 	}
 }
