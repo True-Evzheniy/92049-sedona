@@ -1,5 +1,11 @@
+@media(max-width: 767px){
+	.popup-error{
+		display:none;
+	}
+}
 @media(min-width: 768px){
 	.popup-error{
+		display: none;
 		position:absolute;
 		top: 50%;
 		left:50%;

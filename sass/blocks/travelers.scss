@@ -1,4 +1,6 @@
 .travelers{
+	margin-top: 19px;
+
 	&:after {
     	content: '';
     	display: table;
@@ -27,11 +29,25 @@
 
 @media(min-width: 768px){
 	.travelers{
+		margin-top: 16px;
 		&__col-left{
 		    width: 9.3846153846%;
 		}
 		&__col-right{
 			width: 89.6923076923%;
+		}
+	}
+}
+@media(min-width: 1200px){
+	.travelers{
+		margin-top: 16px;
+		&__col-left{
+		    width: 61px;
+		    margin-right: 6px;
+		}
+		&__col-right{
+			width: 890px;
+			float: left;
 		}
 	}
 }

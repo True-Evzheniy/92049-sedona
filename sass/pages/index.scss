@@ -6,14 +6,32 @@
 	padding:47px 0 47px 0;
 	background-size: cover;
 
-	&:before{
-		content: '';
-		display: block;
+	&__text{
 		margin: 0 auto;
-		width: 280px;
-		height: 295px;
-		background: url('../img/bg-sedona-text.png');
+		display: block;
+		&--welcome{
+		height: 35px;
+		margin-bottom: 8px;
+		fill: $blue-base;
+		}
+		&--tothegorgeous{
+		height: 23px;
+		fill:#766357;
+		margin-bottom: 60px;
+		}
+		&--sedona{
+			fill: #fff;
+			height: 48px;
+			width: 280px;
+			margin-bottom: 68px;
+		}
+		&--becausecanyon{
+			fill: #fff;
+			height: 54px;
+		}
 	}
+	
+
 
 	&:after{
 		content: '';
@@ -89,7 +107,7 @@
 	&__title{
 		margin:0;
 		padding-top: 29px;
-		padding-bottom:14px;
+		padding-bottom:10px;
 		font-family: $font-base;
 		font-size: 18px;
 		line-height: 26px;
@@ -98,14 +116,14 @@
 		color: #000;
 
 		&--light{
-			padding-top: 41px;
+			padding-top: 40px;
 			color: #fff;
 		}
 	}
 
 	&__num{
 		margin: 0;
-		padding-bottom: 26px;
+		padding-bottom: 14px;
 		font-family: $font-base;
 		font-size: 14px;
 		line-height: 21px;
@@ -120,7 +138,7 @@
 		margin: 0px;
 		padding-left: 9%;
 		padding-right: 9%;
-		padding-bottom: 30px;
+		padding-bottom: 28px;
 		font-family: $font-base;
 		font-size: 14px;
 		line-height: 21px;
@@ -135,7 +153,7 @@
 
 .block__title{
 	margin: 0;
-	padding-bottom:30px;
+	padding-bottom:27px;
 	font-family: $font-base;
 	text-align: center;
 	font-size:18px;
@@ -146,7 +164,7 @@
 }
 .block__text{
 	margin:0;
-	padding-bottom:28px;
+	padding-bottom:25px;
 	font-family: $font-base;
 	text-align: center;
 	font-size:14px;
@@ -155,9 +173,10 @@
 }
 
 .features{
-	padding-top: 40px;
+	padding-top: 39px;
 	padding-left: 21.8%;
 	padding-right: 12.5%;
+	padding-bottom: 8px;
 	&__item{
 
 		box-sizing: border-box;
@@ -166,7 +185,7 @@
 	&__title{
 		position: relative;
 		margin: 0;
-		padding-bottom: 19px;
+		padding-bottom: 14px;
 		font-family: $font-base;
 		font-size: 18px;
 		line-height: 26px;
@@ -203,7 +222,7 @@
 
 	&__about{
 		margin: 0;
-		padding-bottom:40px;
+		padding-bottom:28px;
 		font-family: $font-base;
 		font-size: 14px;
 		line-height: 21px;
@@ -239,7 +258,7 @@
 	}
 	&__title{
 		margin: 0;
-		padding-bottom:30px;
+		padding-bottom:20px;
 		font-family: $font-base;
 		text-align: center;
 		font-size:21px;
@@ -250,7 +269,7 @@
 	}
 	&__text{
 	margin:0;
-	padding-bottom:40px;
+	padding-bottom:34px;
 	font-family: $font-base;
 	text-align: center;
 	font-size:14px;
@@ -264,7 +283,7 @@
 
 .map{
 	display: block;
-	margin-bottom: 38px;
+	margin-bottom: 37px;
 	width: 100%;
 	height:350px;
 	background: url('../img/map.jpg') no-repeat;
@@ -274,6 +293,31 @@
 @media(min-width: 768px){
 	.main-intro{
 		padding:76px 0 84px 0; 
+
+		&__text{
+		margin: 0 auto;
+		display: block;
+		&--welcome{
+		height: 45px;
+		margin-bottom: 11px;
+		fill: $blue-base;
+		}
+		&--tothegorgeous{
+		height: 30px;
+		fill:#766357;
+		margin-bottom: 54px;
+		}
+		&--sedona{
+			fill: #fff;
+			height: 78px;
+			width: 458px;
+			margin-bottom: 56px;
+		}
+		&--becausecanyon{
+			fill: #fff;
+			height: 80px;
+		}
+	}
 
 		&:after{
 			content: '';
@@ -285,14 +329,7 @@
 			background: url('../img/bg-sedona-mask-tablet.png') no-repeat;
 			background-size:100% 37px;
 		}
-		&:before{
-			content: '';
-			display: block;
-			margin: 0 auto;
-			width: 458px;
-			height: 352px;
-			background: url('../img/bg-sedona-text-tablet.png') no-repeat;
-		}
+
 	}
 
 	.block__title{
@@ -300,6 +337,12 @@
 	}
 
 	.reasons{
+		&__header{
+			padding-top: 57px;
+			padding-left: 18.23%;
+			padding-right: 18.23%;
+		}
+
 		&__item{
 			float: left;
 			width: 33.33%;
@@ -325,6 +368,13 @@
 			width: 66.67%;
 			float:right;
 		}
+		
+		&__num{
+			padding-bottom: 21px;
+		}
+		&__title{
+			padding-top: 45px;
+		}
 
 
 
@@ -337,6 +387,7 @@
 		padding: 0;
 		&__title{
 			font-size: 21px;
+			padding-bottom: 20px;
 			&:before{
 				content: '';
 				position: absolute;
@@ -355,17 +406,19 @@
 			text-align: center;
 			width: 33.33%;
 			float: left;
-
+		}
+		&__about{
+			padding-bottom: 20px;
 		}
 	}
 	.hotel-search{
-		padding:58px 155px 58px;
+		padding:53px 155px 58px;
 		&__title{
-			padding-bottom: 35px;
+			padding-bottom: 29px;
 			@include fonter(30px,30px);
 		}
 		&__text{
-			padding-bottom: 44px;
+			padding-bottom: 42px;
 		}
 	}
 
@@ -373,5 +426,7 @@
 		background-image: url("../img/map-tablet.jpg")
 	}
 
-
+	.block__text{
+		padding-bottom: 50px;
+	}
 }

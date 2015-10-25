@@ -27,19 +27,19 @@
 	}
 }
 .intro-text{
-	padding: 76px 6.5% 0 6.5%;
+	padding: 73px 6.5% 0 6.5%;
 	text-align: center;
 	border-bottom: 1px solid $gray-lighter;
 	&__title{
 		margin: 0;
-		padding-bottom: 30px;
+		padding-bottom: 26px;
 		@include fonter(18px,26px);
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 	&__text{
 		margin: 0;
-		padding-bottom: 19px;
+		padding-bottom: 17px;
 		@include fonter(14px,24px);
 		text-transform: uppercase;
 		color: $gray-base;
@@ -49,8 +49,7 @@
 .hotel-form{
 
 	&__item{
-		padding: 20px 6.25% 24px;
-		padding-bottom: 24px;
+		padding: 18px 6.25% 10px;
 		border-bottom: 1px solid $gray-lighter;
 
 		&:last-of-type{
@@ -70,11 +69,10 @@
 	&__label{
 		display: block;
 		margin: 0;
-		padding-top: 19px;
-		padding-bottom: 11px;
+		padding-bottom: 7px;
 		@include fonter(14px,26px);
 		text-transform: uppercase;
-		padding-left: 20px;
+		padding-left: 21px;
 		color: $gray-base;
 		cursor:pointer;
 		&--center{
@@ -96,6 +94,7 @@
 	&__input{
 		width: 100%;
 		margin: 0;
+		margin-bottom: 14px;
 		padding: 16px 20px;
 		@include fonter(18px,26px);
 		font-weight: bold;
@@ -116,6 +115,7 @@
 
 	&__radio{
 		display: inline-block;
+		margin-top: -2px;
 		padding-bottom: 14px;
 		width: 100%;
 		vertical-align: middle;
@@ -137,8 +137,12 @@
 			background-color: $gray-lighten;
 		}
 	}
+	
+	&__travelers-wrap{
+		padding-top: 5px;
+	}	
 
-		&__checkbox{
+	&__checkbox{
 		display: block;
 		padding-bottom: 24px;
 		vertical-align: middle;
@@ -162,7 +166,7 @@
 
 	&__btn{
 		display: block;
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 		width: 100%;
 		padding: 16px 0;
 		@include fonter(21px,26px);
@@ -195,6 +199,9 @@
 		&:active{
 			background-color: $gray-active;
 			color: #afafaf;
+		}
+		&:before{
+			content: "загрузить фотографии";
 		}
 	}
 
