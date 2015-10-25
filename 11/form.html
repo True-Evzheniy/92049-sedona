@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+  <base href="https://up-htmlacademy.github.io/92049-sedona/11/">
+</head>
+<body>
+	<div class="container">
+		<header сlass="page-header">
+			<div class="page-header__navigation">
+				<nav class="navigation">
+					<ul class="navigation__list clearfix">
+						<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Карта штата</a></li>
+						<li class="navigation__item navigation__item--left"><a class="navigation__link" href="">Информация</a></li>
+						<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Фото и видео</a></li>
+						<li class="navigation__item navigation__item--right"><a class="navigation__link" href="">Гостиницы</a></li>
+					</ul>
+					<a href="" class="navigation__close"></a>
+					<div class="navigation__top-panel">
+						<a href="index.html" class="navigation__logo"></a>
+						<a href="" class="navigation__burger"><span></span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="intro">
+		</section>
+
+		<section class="intro-text">
+			<h2 class="intro-text__title">Оставьте свой отзыв</h2>
+			<p class="intro-text__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а также о посященных вами достопримечательностях</p>
+		</section>
+
+
+		<form class="hotel-form" method="post" action="/echo">
+			
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Представьтесь, пожалуйста:</h1>
+				<div class="flexbox">
+				<div class="hotel-form__field">
+				<label for="lastname" class="hotel-form__label hotel-form__label--req">Фамилия:</label>
+				<input class="hotel-form__input" id="lastname" type="text" required placeholder="Иванов">
+				</div>
+				<div class="hotel-form__field">
+				<label for="firstname" class="hotel-form__label hotel-form__label--req">Имя:</label>
+				<input class="hotel-form__input" id="firstname" type="text" required placeholder="Пётр">
+				</div>
+				<div class="hotel-form__field">
+				<label for="patronymic" class="hotel-form__label">Отчество:</label>
+				<input class="hotel-form__input" id="patronymic" type="text" placeholder="Александрович">
+				</div>
+				</div>
+			</div>
+			
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Ваше общее впечатление:</h1>
+				<div class="flexbox flexbox--radio">
+				<div class="hotel-form__radio-wrap">
+				<input type="radio" id="positive" name="impress"  checked hidden>
+				<label class="hotel-form__radio" for="positive">Скорее положительное</label>
+				</div>
+				<div class="hotel-form__radio-wrap">
+				<input type="radio" id="negative" name="impress" hidden>
+				<label class="hotel-form__radio" for="negative">Скорее отрицательное</label>
+				</div>
+				</div>
+			</div>
+			
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Даты вашей поездки</h2>
+				<div class="flexbox">
+				<div class="hotel-form__field">
+				<label for="datein" class="hotel-form__label">Дата приезда:</label>
+				<input class="hotel-form__input" id="datein" type="text" placeholder="4 июля 2015" required>
+				</div>
+				<div class="hotel-form__field">
+				<label for="day-counter" class="hotel-form__label hotel-form__label--req hotel-form__label--days no-js"></label>
+				<div class="counter no-js">
+					<a href="" class="counter__btn icon-minus"></a>
+						<div class="counter__display">
+							<input type="text" id="day-counter" class="counter__input" value="14">
+							<div class="counter__right">дн.</div>
+						</div>
+					<a href="" class="counter__btn icon-plus"></a>
+				</div>
+				</div>
+				<div class="hotel-form__field">
+				<label for="dateout" class="hotel-form__label">Дата отъезда:</label>
+				<input class="hotel-form__input" id="dateout" type="text" placeholder="28 июля 2015" required>
+				</div>
+				</div>
+			</div>
+			
+			<div class="hotel-form__item no-js">
+				<h1 class="hotel-form__title">Кол-во путешественников</h1>
+				<div class="flexbox flexbox--center">
+				<div class="hotel-form__field">
+				<label for="counter" class="hotel-form__label--width hotel-form__label--travelers hotel-form__label hotel-form__label--req"></label>
+				<div class="travelerss__counter-wrap">
+					<div class="counter">
+						<a href="" class="counter__btn icon-minus"></a>
+						<div class="counter__display">
+							<input type="text" id="counter" class="counter__input" value="2">
+							<div class="counter__right">чел.</div>
+						</div>
+						<a href="" class="counter__btn icon-plus"></a>
+					</div>
+				</div>
+				</div>
+				</div>
+				<div class="hotel-form__travelers-wrap">
+					<div class="travelers">
+						<div class="travelers__col-left">
+							<span class="hotel-form__label hotel-form__label--center">№</span>
+							<div class="travelers__num">1</div>
+						</div>
+						<div class="travelers__col-right flexbox">
+							<div class="hotel-form__field--small">
+							<label for="lastname#1" class="hotel-form__label hotel-form__label--req">Фамилия:</label>
+							<input type="text" id="lastname#1" class="hotel-form__input" required placeholder="Иванов">
+							</div>
+							<div class="hotel-form__field--small">
+							<label for="firstname#1" class="hotel-form__label hotel-form__label--req">Имя:</label>
+							<input type="text" id="firstname#1" class="hotel-form__input" required placeholder="Пётр">
+							</div>
+							<div class="hotel-form__field--small">
+							<label for="patronymic#1" class="hotel-form__label">Отчество:</label>
+							<input type="text" id="patronymic#1" class="hotel-form__input" placeholder="Александрович">
+							</div>
+						</div>
+					</div>
+
+					<div class="travelers">
+						<div class="travelers__col-left">
+							<span class="hotel-form__label hotel-form__label--center">№</span>
+							<div class="travelers__num">2</div>
+						</div>
+						<div class="travelers__col-right flexbox">
+							<div class="hotel-form__field--small">
+							<label for="lastname#2" class="hotel-form__label hotel-form__label--req">Фамилия:</label>
+							<input type="text" id="lastname#2" class="hotel-form__input" required placeholder="Иванов">
+							</div>
+							<div class="hotel-form__field--small">
+							<label for="firstname#2" class="hotel-form__label hotel-form__label--req">Имя:</label>
+							<input type="text" id="firstname#2" class="hotel-form__input" required placeholder="Пётр">
+							</div>
+							<div class="hotel-form__field--small">
+							<label for="patronymic#2" class="hotel-form__label">Отчество:</label>
+							<input type="text" id="patronymic#2" class="hotel-form__input" placeholder="Александрович">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title hotel-form__title--narrow">Посещенные достопримечательности:</h1>
+				<div class="flexbox--wrap">
+					<div class="hotel-form__boxcheck">
+						<input id="devil" type="checkbox" name="showplace" checked hidden>
+						<label for="devil" class="hotel-form__checkbox">Мост дьявола</label>
+					</div>
+					<div class="hotel-form__boxcheck">
+						<input id="slidepark" type="checkbox" name="showplace" hidden>
+						<label for="slidepark" class="hotel-form__checkbox">Слайд-парк</label>
+					</div>
+					<div class="hotel-form__boxcheck">
+						<input id="mountainbell" type="checkbox" name="showplace" checked hidden>
+						<label for="mountainbell" class="hotel-form__checkbox">Гора-колокол</label>
+					</div>
+					<div class="hotel-form__boxcheck">
+						<input id="redrock" type="checkbox" name="showplace" checked hidden>
+						<label for="redrock" class="hotel-form__checkbox">Красные скалы</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="hotel-form__item">
+				<h1 class="hotel-form__title">Загрузите фотографии</h1>
+				<input type="file" id="download" hidden>
+				<label for="download" class="hotel-form__btn hotel-form__btn--gray-theme"></label>
+				
+			<div class="gallery">
+					<ul class="gallery__list clearfix">
+						
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
+							<a href="" class="gallery__del-img"><svg class="gallery__cross"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="22.199px" height="22.199px" fill="#b8b8b8" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+<polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 
+	22.199,19.396 13.903,11.1 "/>
+</svg></a>
+						</li>
+						
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
+							<a href="" class="gallery__del-img"><svg class="gallery__cross"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="22.199px" height="22.199px" fill="#b8b8b8" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+<polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 
+	22.199,19.396 13.903,11.1 "/>
+</svg></a>
+						</li>
+						
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
+							<a href="" class="gallery__del-img"><svg class="gallery__cross"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="22.199px" height="22.199px" fill="#b8b8b8" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+<polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 
+	22.199,19.396 13.903,11.1 "/>
+</svg></a>
+						</li>
+						
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
+							<a href="" class="gallery__del-img"><svg class="gallery__cross"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="22.199px" height="22.199px" fill="#b8b8b8" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+<polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 
+	22.199,19.396 13.903,11.1 "/>
+</svg></a>
+						</li>
+						
+						<li class="gallery__item">
+							<div class="gallery__img-wrap">
+								<img width="100%" src="./img/img-gallery.png" alt="">
+							</div>
+							<div class="gallery__file">IMG-686.jpg</div>
+							<a href="" class="gallery__del-img"><svg class="gallery__cross"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="22.199px" height="22.199px" fill="#b8b8b8" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+<polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 
+	22.199,19.396 13.903,11.1 "/>
+</svg></a>
+						</li>
+						
+						
+					</ul>	
+			
+			
+			</div>
+			<input type="submit" id="lastbtn" placeholder="Отправитьотзыв" hidden>
+			<label for="lastbtn" class="hotel-form__btn">Отправить отзыв</label>
+			</div>
+		</form>
+
+		<footer class="page-footer">
+			<div class="page-footer__hash">#visitsedona</div>
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item"><a href="#" class="icon-twitter social__link"><span>Мы в твиттере</span></a></li>
+					<li class="social__item"><a href="#" class="icon-facebook social__link"><span>Мы в фейсбуке</span></a></li>
+					<li class="social__item"><a href="#" class="icon-youtube social__link"><span>Мы на ютюбе</span></a></li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">Разработано<a href="http://htmlacademy.ru" class="page-footer__link">
+				<svg version="1.0" id="Layer_1" class="page-footer__academy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
+	l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
+	l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
+	l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65
+	l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036
+	v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+</svg>
+			</a></div>
+		</footer>
+
+		<div class="popup-error">
+			<div class="popup-error__title">Что-то пошло не так!</div>
+			<div class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+			<a href="" class="popup-error__btn">Ок</a>
+		</div>
+		<div class="popup-ok">
+			<div class="popup-ok__up">
+				<div class="popup-ok__title">Ваш отзыв отправлен</div>
+				<div class="popup-ok__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</div>
+			</div>
+			<div class="popup-ok__down">
+				<div class="popup-ok__btn">Закрыть окно</div>
+			</div>
+		</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
