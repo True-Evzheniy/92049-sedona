@@ -49,6 +49,7 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		
 	}
 
 	&__close{
@@ -197,4 +198,15 @@
 
 	}
 
+}
+
+@media(max-width: 767px){
+	.navigation__list{
+		&--close{
+			display: none;
+		}
+		&--open{
+			display: block;
+		}
+	}
 }

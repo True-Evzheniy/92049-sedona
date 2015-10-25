@@ -1,6 +1,26 @@
 var displays = document.querySelectorAll(".no-js");
 var elements = document.querySelectorAll(".counter");
+var navigation=document.querySelector(".navigation__list");
+var close=document.querySelector(".navigation__close");
+var burger=document.querySelector(".navigation__burger");
 
+// menu
+navigation.classList.add("navigation__list--close");
+
+burger.addEventListener("click",function(event){
+	event.preventDefault();
+	navigation.classList.toggle("navigation__list--close");
+})
+close.addEventListener("click",function(event){
+	event.preventDefault();
+	navigation.classList.toggle("navigation__list--close");
+})
+
+
+
+
+
+//counter
 for(var i = 0; i < displays.length; i++){
 	display = displays[i];
 	display.classList.remove("no-js");	
