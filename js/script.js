@@ -61,6 +61,12 @@ function initNumberField(parent){
 
 //ajax
 var form = document.querySelector(".hotel-form");
+var popup = document.querySelector(".popup-ok");
+var btn = popup.querySelector(".popup-ok__btn");
+btn.addEventListener("click", function(){
+	event.preventDefault();
+	popup.classList.toggle("popup-ok--hidden");
+})
 
 form.addEventListener("submit",function(){
 	event.preventDefault();
@@ -70,6 +76,7 @@ form.addEventListener("submit",function(){
 	xhr.addEventListener("readystatechange", function(){
 		if(xhr.readyState == 4){
 			console.log(xhr.responseText);
+			popup.classList.toggle("popup-ok--hidden");
 		}
 	});
 	xhr.send(data);

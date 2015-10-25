@@ -1,14 +1,13 @@
-@media(max-width: 767px){
-	.popup-ok{
-		display:none;
+.popup-ok{
+	&--hidden{
+		display: none;
 	}
 }
 
 @media(min-width: 768px){
 	.popup-ok{
-		display: none;
 		position:absolute;
-		top: 20%;
+		bottom: 10%;
 		left:50%;
 		transform: translate(-50%,-50%);
 		width: 640px;
