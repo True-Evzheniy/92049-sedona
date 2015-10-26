@@ -10,11 +10,11 @@ navigation.classList.add("navigation__list--close");
 burger.addEventListener("click",function(event){
 	event.preventDefault();
 	navigation.classList.toggle("navigation__list--close");
-})
+});
 close.addEventListener("click",function(event){
 	event.preventDefault();
 	navigation.classList.toggle("navigation__list--close");
-})
+});
 
 
 
@@ -39,11 +39,11 @@ function initNumberField(parent){
 	minus.addEventListener("click", function(event){
 		event.preventDefault();
 		changeNumber(false);
-	})
+	});
 	plus.addEventListener("click", function(event){
 		event.preventDefault();
 		changeNumber(true);
-	})
+	});
 	function changeNumber(operation){
 		var value = Number(input.value);
 		if(isNaN(value)){
@@ -58,3 +58,26 @@ function initNumberField(parent){
 		}
 	}
 }
+
+//ajax
+var form = document.querySelector(".hotel-form");
+var popup = document.querySelector(".popup-ok");
+var btn = popup.querySelector(".popup-ok__btn");
+btn.addEventListener("click", function(){
+	event.preventDefault();
+	popup.classList.toggle("popup-ok--hidden");
+})
+
+form.addEventListener("submit",function(){
+	event.preventDefault();
+	var data = new FormData(form);
+	var xhr = new XMLHttpRequest();
+	xhr.open("post", "https://echo.htmlacademy.ru/adaptive");
+	xhr.addEventListener("readystatechange", function(){
+		if(xhr.readyState == 4){
+			console.log(xhr.responseText);
+			popup.classList.toggle("popup-ok--hidden");
+		}
+	});
+	xhr.send(data);
+});
