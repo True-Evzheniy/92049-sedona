@@ -48,7 +48,7 @@ function initNumberField(parent){
 		var value = Number(input.value);
 		if(isNaN(value)){
 			value = 1;
-		} else if(value <= 0){
+		} else if(value < 0){
 			value = 1;
 		}
 		if(operation){
@@ -58,6 +58,47 @@ function initNumberField(parent){
 		}
 	}
 }
+//add traveler
+var travelers = document.querySelector("#travelers").innerHTML;
+var inputCounter = document.querySelector("#counter");
+var field = document.querySelector(".hotel-form__travelers-wrap");
+var count = Number(inputCounter.value);
+var block = document.querySelector("#travelers-counter");
+var minus = block.querySelector(".icon-minus");
+var plus = block.querySelector(".icon-plus");
+minus.addEventListener('click', function() {
+	event.preventDefault();
+	var count = Number(inputCounter.value);
+	deleteTraveler(count);
+});
+plus.addEventListener('click', function() {
+	event.preventDefault();
+	var count = Number(inputCounter.value);
+	makeTraveler(count);
+});
+
+function makeTraveler(count) {
+	for (var i = 0; i <= count; i++) {
+		var id = "number-" + i;
+		var row = document.createElement("div");
+		row.classList.add("travelers");
+		row.id = id;
+		var html = Mustache.render(travelers, {
+		"number": i
+		});
+		row.innerHTML = html;
+	  }
+	  field.appendChild(row);
+}
+function deleteTraveler(count) {
+	var id = "number-" + (count + 1);
+	element = document.getElementById(id);
+	if (element) {
+		element.remove();
+	}
+}
+
+
 
 //ajax
 var form = document.querySelector(".hotel-form");
