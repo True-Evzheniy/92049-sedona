@@ -53,6 +53,8 @@ function initNumberField(parent){
 		}
 		if(operation){
 			input.value = value + 1; 
+		} else if(value == 0){
+			input.value = value;
 		} else{
 			input.value = value - 1;
 		}
