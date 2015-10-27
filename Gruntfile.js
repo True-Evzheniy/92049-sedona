@@ -31,6 +31,7 @@ module.exports = function(grunt) {
             "js/**",
             "index.html",
             "*.html",
+            "font/**"
           ],
           dest: "build"
         }]
@@ -40,7 +41,8 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          'build/css/style.css': 'sass/style.scss'
+          'build/css/style.css': 'sass/style.scss',
+          'css/style.css': 'sass/style.scss'
         }
       }
     },

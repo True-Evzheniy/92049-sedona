@@ -1,3 +1,9 @@
+.gallery img{
+	width:100%;
+	display: block;
+}
+
+
 .gallery{
 
 	&__list{
@@ -99,7 +105,9 @@
 		&__img-wrap{
 			width: 140px;
 			margin-right: 65px
-			
+
 		}
 	}
 }
+
+
