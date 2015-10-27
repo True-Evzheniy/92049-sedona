@@ -17,6 +17,37 @@ close.addEventListener("click",function(event){
 });
 
 
+//parse date
+var dateField = document.querySelector("#date-field");
+dateInit(dateField);
+
+function dateInit(field){
+	var minus = field.querySelector(".icon-minus");
+	var plus = field.querySelector(".icon-plus");
+	var dateout = field.querySelector("#dateout")
+	plus.addEventListener("click", function(event){
+		var days = field.querySelector("#day-counter").value;
+		days = Number(days) + 1;
+		var indate = moment(field.querySelector("#datein").value);
+		indate.add(days,"day");
+		dateout.value = indate.format("YYYY-MM-DD");
+	});
+	minus.addEventListener("click", function(event){
+		var days = field.querySelector("#day-counter").value;
+		if(days==0){
+			return;
+		}
+		days = Number(days) - 1;
+		var indate = moment(field.querySelector("#datein").value);
+		indate.add(days,"day");
+		dateout.value = indate.format("YYYY-MM-DD");
+	});
+}
+
+
+
+
+
 
 
 

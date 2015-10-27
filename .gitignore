@@ -8,3 +8,4 @@ prepros.cfg
 css/*.css
 build/
 gosha/
+bower_components
