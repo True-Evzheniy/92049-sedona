@@ -7,4 +7,5 @@ prepros.cfg
 *.map
 css/*.css
 build/
-gosha/
+bower_components
+gosha
