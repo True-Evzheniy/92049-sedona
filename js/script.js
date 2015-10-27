@@ -28,9 +28,10 @@ function dateInit(field){
 	plus.addEventListener("click", function(event){
 		var days = field.querySelector("#day-counter").value;
 		days = Number(days) + 1;
-		var indate = moment(field.querySelector("#datein").value);
+		var indate = field.querySelector("#datein").value;
+		indate = moment(indate,"DD MMM YYYY","ru");
 		indate.add(days,"day");
-		dateout.value = indate.format("YYYY-MM-DD");
+		dateout.value = indate.format("DD MMM YYYY","ru");
 	});
 	minus.addEventListener("click", function(event){
 		var days = field.querySelector("#day-counter").value;
@@ -38,9 +39,10 @@ function dateInit(field){
 			return;
 		}
 		days = Number(days) - 1;
-		var indate = moment(field.querySelector("#datein").value);
+		var indate = field.querySelector("#datein").value;
+		indate = moment(indate,"DD MMM YYYY","ru");
 		indate.add(days,"day");
-		dateout.value = indate.format("YYYY-MM-DD");
+		dateout.value = indate.format("DD MMM YYYY","ru");
 	});
 }
 
